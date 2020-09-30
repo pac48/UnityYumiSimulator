@@ -27,17 +27,15 @@ public class yumi : MonoBehaviour
     public Matrix JL = new DenseMatrix(6, 7);
     public Matrix eye = (Matrix)Matrix<float>.Build.DenseIdentity(7);
     public Vector target = new DenseVector(6) { -.7f, .3f, 3.5f, 0, 0, 0};
-    //private List<int> leftInds = new List<int>() {4, 5, 9, 10, 11, 12, 13 };
-    //private List<int> rightInds = new List<int>() {0,1,2,3,6,7,8};
     private List<int> leftInds = new List<int>() { 7, 8, 9, 10, 11, 12, 13 };
     private List<int> rightInds = new List<int>() { 0, 1, 2, 3, 4, 5, 6 };
     public List<ArticulationBody> jointsR;
     public List<ArticulationBody> jointsL;
     void Start()
     {
-        // jointVelMsg  = new JointVelMsg();
-        //  Application.runInBackground = true;
-        //   startServer();
+         jointVelMsg  = new JointVelMsg();
+         Application.runInBackground = true;
+         startServer();
     }
 
     // Update is called once per frame
@@ -87,15 +85,18 @@ public class yumi : MonoBehaviour
         effectorR[0] = effectorRT.position.x;
         effectorR[1] = effectorRT.position.y;
         effectorR[2] = effectorRT.position.z;
-        target[0] = .3f;
-        target[1] = -1.5f;
-        target[2] = 3.5f;
+        if (jointVelMsg.values.Count > 0){ 
+        for (int i = 0; i < jointVelMsg.values.Count; i++) {
+                target[i] = jointVelMsg.values[i];
+            }
         printJ(effectorR);
         Vector dirR = (Vector)(target - effectorR);
         Vector dirL = (Vector)(target - effectorL);
-        Vector edR = (Vector)((JR.Transpose() * JR +  .01f*eye).Inverse() * JR.Transpose() * 2f*dirR);
+        Vector edR = (Vector)((JR.Transpose() * JR + .01f * eye).Inverse() * JR.Transpose() * 2f * dirR);
         Vector edL = (Vector)((JL.Transpose() * JL + .01f * eye).Inverse() * JL.Transpose() * 2f * dirL);
+        edR = (Vector) (JR.PseudoInverse() * jointVelMsg.values); 
         setJointVelocities(edL.ToList<float>(), edR.ToList<float>());// jointVelMsg.values);
+    }
     }
     void setJointVelocities(List<float> valuesL, List<float> valuesR)
     {
@@ -281,14 +282,14 @@ public class yumi : MonoBehaviour
 }
 
 public class JointVelMsg {
-    public List<float> values;
+    public Vector<float> values;
     public int length;
     public JointVelMsg() {
-        length = 18+6*0;
-        values = new List<float>(length);
-        for (int i = 0; i < length; i++){
-            values.Add(0.0f);
-        }
+        length = 6;
+        values = new DenseVector(length);
+        //for (int i = 0; i < length; i++){
+        //    values.Add(0.0f);
+        //}
         }
     public void Fill(byte[] v)
     {
