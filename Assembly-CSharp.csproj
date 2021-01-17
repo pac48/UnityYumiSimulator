@@ -376,11 +376,11 @@
  <Reference Include="MessageGeneration">
  <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/MessageGeneration.dll</HintPath>
  </Reference>
- <Reference Include="Microsoft.Bcl.AsyncInterfaces">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
- </Reference>
  <Reference Include="System.Threading.Tasks.Extensions">
  <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Threading.Tasks.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+ <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
  </Reference>
  <Reference Include="MathNet.Numerics">
  <HintPath>C:/Users/paulg/Unity Projects/project/Assets/MathNet.Numerics.dll</HintPath>
