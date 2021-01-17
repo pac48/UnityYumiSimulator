@@ -770,10 +770,6 @@
       <Project>{106ea2b8-43f9-78b9-0a52-07f664cd9845}</Project>
       <Name>Mirror.Examples</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
-      <Project>{11b3d910-a627-cb1f-ae3c-421cfbc0557c}</Project>
-      <Name>Unity.Mathematics.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Mirror.CompilerSymbols.csproj">
       <Project>{7873bd44-b075-e010-143a-924bfa5f1578}</Project>
       <Name>Mirror.CompilerSymbols</Name>
@@ -810,9 +806,17 @@
       <Project>{81b584bb-035f-3180-11b1-5b15d7c6edc5}</Project>
       <Name>Mirror.Examples.Cloud.Pong</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
+      <Project>{11b3d910-a627-cb1f-ae3c-421cfbc0557c}</Project>
+      <Name>Unity.Mathematics.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{8750734c-8168-cd65-4731-fed93fe3af4e}</Project>
       <Name>Unity.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.PerformanceTests.csproj">
+      <Project>{8cae1daf-eb31-a068-f59f-6add706150f7}</Project>
+      <Name>Unity.Mathematics.PerformanceTests</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

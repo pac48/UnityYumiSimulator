@@ -53,6 +53,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\SensorDataVisualization\LaserScanVisualizerSpheres.cs" />
+     <Compile Include="Assets\Unity.Mathematics-master\Unity.Mathematics-master\src\Unity.Mathematics.CodeGen\VectorGenerator.cs" />
      <Compile Include="Assets\RosSharp\Scripts\Extensions\TransformExtensions.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\YumiJointPublisher.cs" />
      <Compile Include="Assets\HumanController.cs" />
@@ -74,6 +75,7 @@
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\TwistPublisher.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\JointStatePublisher.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\TwistSubscriber.cs" />
+     <Compile Include="Assets\Unity.Mathematics-master\Unity.Mathematics-master\src\Unity.Mathematics.Shaders\hlsl.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\SensorDataVisualization\LaserScanVisualizerMesh.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\JoySubscriber.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\UnitySubscriber.cs" />
@@ -106,6 +108,7 @@
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\LaserScanSubscriber.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\PoseStampedPublisherStatic.cs" />
      <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfPlugin.cs" />
+     <Compile Include="Assets\Unity.Mathematics-master\Unity.Mathematics-master\src\Unity.Mathematics.CodeGen\Properties\AssemblyInfo.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\LaserScanWriter.cs" />
      <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfCollisions.cs" />
      <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJoint.cs" />
@@ -114,6 +117,7 @@
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\ImagePublisher.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JointStateWriter.cs" />
      <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJointRevolute.cs" />
+     <Compile Include="Assets\Unity.Mathematics-master\Unity.Mathematics-master\src\Unity.Mathematics.CodeGen\Program.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\YumiHandPublisher.cs" />
      <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfPlugins.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\LaserScanPublisher.cs" />
@@ -124,6 +128,8 @@
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\UnityFibonacciActionClient.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\GetParamServiceProvider.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\LaserScanReader.cs" />
+     <Compile Include="Assets\Unity.Mathematics-master\Unity.Mathematics-master\Tools\CI\ValidatePackage.cs" />
+     <None Include="Assets\Unity.Mathematics-master\Unity.Mathematics-master\Unity.Mathematics.TestProject\ProjectSettings\ProjectVersion.txt" />
      <None Include="Assets\ROS\unity_simulation_scene\package.xml" />
      <None Include="Assets\Mirror\Version.txt" />
      <None Include="Assets\Mirror\Readme.txt" />
@@ -817,10 +823,6 @@
       <Project>{106ea2b8-43f9-78b9-0a52-07f664cd9845}</Project>
       <Name>Mirror.Examples</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
-      <Project>{11b3d910-a627-cb1f-ae3c-421cfbc0557c}</Project>
-      <Name>Unity.Mathematics.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Mirror.CompilerSymbols.csproj">
       <Project>{7873bd44-b075-e010-143a-924bfa5f1578}</Project>
       <Name>Mirror.CompilerSymbols</Name>
@@ -857,9 +859,17 @@
       <Project>{81b584bb-035f-3180-11b1-5b15d7c6edc5}</Project>
       <Name>Mirror.Examples.Cloud.Pong</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
+      <Project>{11b3d910-a627-cb1f-ae3c-421cfbc0557c}</Project>
+      <Name>Unity.Mathematics.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{8750734c-8168-cd65-4731-fed93fe3af4e}</Project>
       <Name>Unity.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.PerformanceTests.csproj">
+      <Project>{8cae1daf-eb31-a068-f59f-6add706150f7}</Project>
+      <Name>Unity.Mathematics.PerformanceTests</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

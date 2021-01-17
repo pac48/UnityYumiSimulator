@@ -38,7 +38,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.mathematics": {
-      "version": "file:C:/Users/paulg/Downloads/Unity.Mathematics-master/Unity.Mathematics-master/src",
+      "version": "file:../Assets/Unity.Mathematics-master/Unity.Mathematics-master/src",
       "depth": 0,
       "source": "local",
       "dependencies": {}
