@@ -10,32 +10,49 @@ using UnityEngine.UIElements;
 using MathNet.Numerics.LinearAlgebra;
 using System.Data;
 using MathNet.Numerics.LinearAlgebra.Single;
+using Mirror;
+using RosSharp.RosBridgeClient;
 
-public class yumi : MonoBehaviour
+public class Yumi : NetworkBehaviour
 {
-    System.Threading.Thread SocketThread;
-    volatile bool keepReading = false;
-    public List<Transform> tList;
+    //System.Threading.Thread SocketThread;
+   // volatile bool keepReading = false;
+   // public List<Transform> tList;
     public ArticulationBody root;
     public Transform effectorLT;
+    public Transform hand;
     public Vector effectorL = new DenseVector(6);
     public Transform effectorRT;
     public Vector effectorR = new DenseVector(6);
-    public JointVelMsg jointVelMsg;
     public ArticulationJacobian J = new ArticulationJacobian(120, 14);
-    public Matrix JR = new DenseMatrix(6, 7);
-    public Matrix JL = new DenseMatrix(6, 7);
-    public Matrix eye = (Matrix)Matrix<float>.Build.DenseIdentity(7);
-    public Vector target = new DenseVector(6) { -.7f, .3f, 3.5f, 0, 0, 0};
+    public static Matrix JR = new DenseMatrix(6, 7);
+    public static Matrix JL = new DenseMatrix(6, 7);
+    public static Matrix eye = (Matrix)Matrix<float>.Build.DenseIdentity(7);
+    public Vector target = new DenseVector(6) { -.7f, .3f, 3.5f, 0, 0, 0 };
     private List<int> leftInds = new List<int>() { 7, 8, 9, 10, 11, 12, 13 };
     private List<int> rightInds = new List<int>() { 0, 1, 2, 3, 4, 5, 6 };
     public List<ArticulationBody> jointsR;
     public List<ArticulationBody> jointsL;
+    public static List<float> jointVelR = new List<float>() { 0, 0, 0, 0, 0, 0, 0 };
+    public static List<float> jointVelL = new List<float>() { 0, 0, 0, 0, 0, 0, 0 };
+    public static List<float> handVelR = null;
+    public static List<float> handVelL = null;
+
     void Start()
     {
-         jointVelMsg  = new JointVelMsg();
-         Application.runInBackground = true;
-         startServer();
+        var scripts = GetComponents<MonoBehaviour>();
+        if (!isServer){
+            foreach (var script in scripts)
+            {
+                script.enabled = false;
+            }
+            foreach (var joint in gameObject.GetComponentsInChildren<ArticulationBody>())
+            {
+                joint.enabled = false;
+            }
+           // GetComponents<ArticulationBody>()[0].enabled = false;
+        }
+
     }
 
     // Update is called once per frame
@@ -56,7 +73,7 @@ public class yumi : MonoBehaviour
         String str = "";
         for (int r = 0; r < Ji.Count; r++)
         {
-                str += Ji[r].ToString() + " ";
+            str += Ji[r].ToString() + " ";
             str += "\n";
         }
         Debug.Log(str);
@@ -78,38 +95,33 @@ public class yumi : MonoBehaviour
     }
     void FixedUpdate()
     {
-        getJacobian();
-        effectorL[0] = effectorLT.position.x;
-        effectorL[1] = effectorLT.position.y;
-        effectorL[2] = effectorLT.position.z;
-        effectorR[0] = effectorRT.position.x;
-        effectorR[1] = effectorRT.position.y;
-        effectorR[2] = effectorRT.position.z;
-        if (jointVelMsg.values.Count > 0){ 
-        for (int i = 0; i < jointVelMsg.values.Count; i++) {
-                target[i] = jointVelMsg.values[i];
-            }
-        printJ(effectorR);
-        Vector dirR = (Vector)(target - effectorR);
-        Vector dirL = (Vector)(target - effectorL);
-        Vector edR = (Vector)((JR.Transpose() * JR + .01f * eye).Inverse() * JR.Transpose() * 2f * dirR);
-        Vector edL = (Vector)((JL.Transpose() * JL + .01f * eye).Inverse() * JL.Transpose() * 2f * dirL);
-        edR = (Vector) (JR.PseudoInverse() * jointVelMsg.values); 
-        setJointVelocities(edL.ToList<float>(), edR.ToList<float>());// jointVelMsg.values);
-    }
+         if (handVelL != null || handVelR != null) 
+            getJacobian();
+        if (handVelL != null)
+        {
+            setHandVel(handVelL, true);
+        }
+        if (handVelR != null)
+        {
+            setHandVel(handVelR, false);
+        }
+        root.SetDriveTargetVelocities(jointVelR.Concat(jointVelL).ToList());
     }
     void setJointVelocities(List<float> valuesL, List<float> valuesR)
     {
+        jointsR[0].SetDriveTargetVelocities(valuesR);
         int ind = -1;
         foreach (ArticulationBody j in jointsR) {
             ind++;
-            j.jointVelocity = new ArticulationReducedSpace(valuesR[ind]);
-        
+            // j.jointVelocity = new ArticulationReducedSpace(valuesR[ind]);
+            //j.jointAcceleration = new ArticulationReducedSpace(0.0f);
+
         }
         ind = -1;
-        foreach (ArticulationBody j in jointsL){
+        foreach (ArticulationBody j in jointsL) {
             ind++;
             j.jointVelocity = new ArticulationReducedSpace(valuesL[ind]);
+            j.jointAcceleration = new ArticulationReducedSpace(0.0f);
         }
     }
     void setJointAcceleration(List<float> values)
@@ -129,10 +141,10 @@ public class yumi : MonoBehaviour
     void fillMatrix(int startRow, List<int> cols, Matrix Ji)
     {
         int row = -1;
-        for (int r = startRow; r < startRow+6; r++){
+        for (int r = startRow; r < startRow + 6; r++) {
             row += 1;
             int col = -1;
-            foreach (int c in cols){
+            foreach (int c in cols) {
                 col += 1;
                 Ji[row, col] = J[r, c];
             }
@@ -153,10 +165,33 @@ public class yumi : MonoBehaviour
         }
         fillMatrix(lastR - 5, rightInds, JR);
         fillMatrix(lastL - 5, leftInds, JL);
-        
-        printJ(J);
+
+        //printJ(J);
     }
 
+    public static void setHandVel(List<float> vel, bool left) {
+        Vector v = new DenseVector(6);
+        for (int i = 0; i < vel.Count; i++)
+        {
+            v[i] = vel[i];
+        }
+        if (left)
+        {    
+            Vector edL = (Vector)((JL.Transpose() * JL + .1f * eye).Inverse() * JL.Transpose() * 2f * v);
+            jointVelL = edL.ToList();
+        }
+        else {
+            Vector edR = (Vector)((JR.Transpose() * JR + .1f * eye).Inverse() * JR.Transpose() * 2f * v);
+            jointVelR = edR.ToList();
+        }
+
+
+    }
+}
+
+
+
+     /*
             void startServer()
     {
         SocketThread = new System.Threading.Thread(networkCode);
@@ -165,7 +200,7 @@ public class yumi : MonoBehaviour
     }
 
 
-
+   
     private string getIPAddress()
     {
         IPHostEntry host;
@@ -299,5 +334,7 @@ public class JointVelMsg {
             Debug.Log(values[i]);
         }
     }
+  
    
 } 
+      */
