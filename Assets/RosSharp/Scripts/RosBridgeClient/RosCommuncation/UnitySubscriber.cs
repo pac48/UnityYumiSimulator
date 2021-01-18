@@ -14,6 +14,7 @@ limitations under the License.
 */
 
 using System.Threading;
+using Mirror;
 using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
@@ -29,17 +30,21 @@ namespace RosSharp.RosBridgeClient
 
         protected virtual void Start()
         {
+            
             rosConnector = GetComponent<RosConnector>();
+         //   if (isServer){
             new Thread(Subscribe).Start();
+         //   }
         }
 
         private void Subscribe()
         {
-
+            //if (isServer){
             if (!rosConnector.IsConnected.WaitOne(SecondsTimeout * 1000))
                 Debug.LogWarning("Failed to subscribe: RosConnector not connected");
 
             rosConnector.RosSocket.Subscribe<T>(Topic, ReceiveMessage, (int)(TimeStep * 1000)); // the rate(in ms in between messages) at which to throttle the topics
+       // }
         }
 
         protected abstract void ReceiveMessage(T message);

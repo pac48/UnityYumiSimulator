@@ -84,7 +84,7 @@ def mouseToJoy():
             rot = .41*np.cross(z, np.array([0.0, 0.0, -1.0]))
            # rot[2] = 4
             #### Start Mapping from Mouse Position to Joy
-            msg.data = [-1*(pos_y-hand_r[2]*0), 0*(msg_human_hand.pose.position.z*0+1.9-hand_r[2]), 1*(pos_x-hand_r[0]*0), rot[0], rot[1], rot[2]]
+            msg.data = [-1*(pos_y-hand_r[2]*0), (msg_human_hand.pose.position.z*0+2.0-hand_r[2]), 1*(pos_x-hand_r[0]*0), rot[0], rot[1], rot[2]]
             rospy.loginfo(msg)
             mouseToJoyPublisher.publish(msg)
             msg.data = [.5, .5, .5, 0, 0, 0, 0]

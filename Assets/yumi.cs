@@ -29,32 +29,57 @@ public class Yumi : NetworkBehaviour
     public static Matrix JL = new DenseMatrix(6, 7);
     public static Matrix eye = (Matrix)Matrix<float>.Build.DenseIdentity(7);
     public Vector target = new DenseVector(6) { -.7f, .3f, 3.5f, 0, 0, 0 };
-    private List<int> leftInds = new List<int>() { 7, 8, 9, 10, 11, 12, 13 };
-    private List<int> rightInds = new List<int>() { 0, 1, 2, 3, 4, 5, 6 };
+    private List<int> leftInds = new List<int>(); //{ 7, 8, 9, 10, 11, 12, 13 };
+    private List<int> rightInds = new List<int>();// { 0, 1, 2, 3, 4, 5, 6 };
     public List<ArticulationBody> jointsR;
     public List<ArticulationBody> jointsL;
     public static List<float> jointVelR = new List<float>() { 0, 0, 0, 0, 0, 0, 0 };
     public static List<float> jointVelL = new List<float>() { 0, 0, 0, 0, 0, 0, 0 };
     public static List<float> handVelR = null;
     public static List<float> handVelL = null;
+    public SyncList<float> jointAngles = new SyncList<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+    public SyncList<float> jointVelocities = new SyncList<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+    private bool client = false;
+    
+   // public override void OnClientConnect()
+  //  {
+   //     client = true;
+    //}
 
     void Start()
     {
-        var scripts = GetComponents<MonoBehaviour>();
-        if (!isServer){
+        foreach (var joint in gameObject.GetComponentsInChildren<ArticulationBody>())
+        {
+            if (joint.name.Contains("l"))
+                leftInds.Add(joint.index-1);
+            if (joint.name.Contains("r"))
+                rightInds.Add(joint.index-1);
+        }    
+            
+        if (Application.platform == RuntimePlatform.WebGLPlayer || ! isServer){
+            var scripts = GetComponents<MonoBehaviour>();
             foreach (var script in scripts)
             {
                 script.enabled = false;
-            }
-            foreach (var joint in gameObject.GetComponentsInChildren<ArticulationBody>())
-            {
-                joint.enabled = false;
-            }
-           // GetComponents<ArticulationBody>()[0].enabled = false;
+            } 
+            GetComponent<MonoBehaviour>().enabled = false;
+            GetComponents<MonoBehaviour>()[6].enabled  = true;
+            //   foreach (var joint in gameObject.GetComponentsInChildren<ArticulationBody>())
+            //  {
+            //     joint.enabled = false;
+            //    joint.immovable = true;
+            //   joint.useGravity = false;
+            // }
+            // foreach (var joint in gameObject.GetComponents<ArticulationBody>())
+            // {
+            //     joint.enabled = false;
+            //    joint.immovable = true;
+            //   joint.useGravity = false;
+            // }
         }
 
     }
-
+    
     // Update is called once per frame
     void printJ(Matrix Ji) {
         String str = "";
@@ -95,6 +120,8 @@ public class Yumi : NetworkBehaviour
     }
     void FixedUpdate()
     {
+    //handVelR = new List<float>() { .1f, 0, 0, 0, 0, 0};//null;
+   // handVelL = new List<float>() { .1f, 0, 0, 0, 0, 0 };//null;
          if (handVelL != null || handVelR != null) 
             getJacobian();
         if (handVelL != null)
@@ -105,8 +132,84 @@ public class Yumi : NetworkBehaviour
         {
             setHandVel(handVelR, false);
         }
-        root.SetDriveTargetVelocities(jointVelR.Concat(jointVelL).ToList());
+
+        var vals = jointVelR.Concat(jointVelL).ToList();
+        int count = 0;
+        foreach (var i in leftInds)
+        {
+            vals[i] = jointVelL[count];
+            count++;
+        }
+        count = 0;
+        foreach (var i in rightInds)
+        {
+            vals[i] = jointVelR[count];
+            count++;
+        }
+        
+        if (isServer)
+        {
+             
+             //root.GetJointPositions(jointAngles);
+            // if (client)
+            CmdSetJoints();
+            root.SetDriveTargetVelocities(vals);
+        }
+        else
+        {
+            var tmp = jointAngles.ToList();
+            GetSyncWithInds(jointAngles, tmp);
+            root.SetJointPositions(tmp);
+            tmp = jointVelocities.ToList();
+            GetSyncWithInds(jointVelocities, tmp);
+            root.SetJointVelocities(jointVelocities.ToList());
+            
+        }
     }
+    
+    //[Command]
+    void CmdSetJoints()
+    {
+       // m_health = health;
+       var tmp = jointAngles.ToList();
+       root.GetJointPositions(tmp);
+       //for (int i = 0; i < tmp.Count; i++)
+       //    jointAngles[i] = tmp[i];
+
+       SetSyncWithInds(jointAngles, tmp);
+       
+       tmp = jointVelocities.ToList();
+       root.GetJointVelocities(tmp);
+       SetSyncWithInds(jointVelocities, tmp);
+       //for (int i = 0; i < tmp.Count; i++)
+       //    jointVelocities[i] = tmp[i];
+      
+    }
+    
+    void SetSyncWithInds(SyncList<float> vals, List<float> jointVals){
+        
+        for (int i = 0; i < leftInds.Count; i++)
+        {
+            vals[i] = jointVals[leftInds[i]]; // l1, l2, l3...
+        }
+        for (int i = 0; i < rightInds.Count; i++)
+        {
+            vals[i+7] = jointVals[rightInds[i]]; // r1, r2, r3...
+        }
+    }
+    
+    void GetSyncWithInds(SyncList<float> vals, List<float> jointVals){
+        
+        for (int i = 0; i < leftInds.Count; i++)
+        {
+            jointVals[leftInds[i]] = vals[i]; // l1, l2, l3...
+        }
+        for (int i = 0; i < rightInds.Count; i++)
+        {
+            jointVals[rightInds[i]] = vals[i+7];  // r1, r2, r3...
+        }
+    }
+    
     void setJointVelocities(List<float> valuesL, List<float> valuesR)
     {
         jointsR[0].SetDriveTargetVelocities(valuesR);
@@ -154,19 +257,26 @@ public class Yumi : NetworkBehaviour
     void getJacobian()
     {
         root.GetDenseJacobian(ref J);
-        // find least block of J for R
-        int lastR = 0;
-        int lastL = 0;
-        for (int r = 0; r < J.rows; r++) {
-            if (J[r, rightInds[0]] != 0 && J[r, rightInds[1]] != 0)
-                lastR = r;
-            if (J[r, leftInds[0]] != 0 && J[r, leftInds[1]] != 0)
-                lastL = r;
-        }
-        fillMatrix(lastR - 5, rightInds, JR);
-        fillMatrix(lastL - 5, leftInds, JL);
+        int indR = GameObject.Find("r7").GetComponent<ArticulationBody>().index;
+        int indL = GameObject.Find("l7").GetComponent<ArticulationBody>().index;
+        // find last block of J for R
+     //   int lastR = 0;
+     //   int lastL = 0;
+     //   for (int r = 0; r < J.rows; r++) {
+     //       if (J[r, rightInds[0]] != 0 && J[r, rightInds[1]] != 0)
+    //            lastR = r;
+    //        if (J[r, leftInds[0]] != 0 && J[r, leftInds[1]] != 0)
+    //            lastL = r;
+    //    }
+        fillMatrix(indR*6 - 6, rightInds, JR);
+        fillMatrix(indL*6 - 6, leftInds, JL);
 
-        //printJ(J);
+       // printJ(JL);
+      //  Debug.Log("LR");
+       // printJ(JR);
+      //  Debug.Log("RL");
+       // printJ(J);
+      //  Debug.Log("RL");
     }
 
     public static void setHandVel(List<float> vel, bool left) {

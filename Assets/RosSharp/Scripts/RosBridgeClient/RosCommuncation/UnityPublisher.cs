@@ -13,6 +13,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+using Mirror;
 using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
@@ -27,13 +28,18 @@ namespace RosSharp.RosBridgeClient
 
         protected virtual void Start()
         {
+            
             rosConnector = GetComponent<RosConnector>();
+           // if (isServer){
             publicationId = rosConnector.RosSocket.Advertise<T>(Topic);
+           // }
         }
 
         protected void Publish(T message)
         {
+        //    if (isServer){
             rosConnector.RosSocket.Publish(publicationId, message);
+         //   }
         }
     }
 }
