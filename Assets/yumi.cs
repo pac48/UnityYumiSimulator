@@ -39,43 +39,18 @@ public class Yumi : NetworkBehaviour
     public static List<float> handVelL = null;
     public SyncList<float> jointAngles = new SyncList<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
     public SyncList<float> jointVelocities = new SyncList<float>() { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-    private bool client = false;
-    
-   // public override void OnClientConnect()
-  //  {
-   //     client = true;
-    //}
+    public GameObject player;
+
 
     void Start()
     {
+        player = MyNetworkManager.singleton.playerPrefab;
         foreach (var joint in gameObject.GetComponentsInChildren<ArticulationBody>())
         {
-            if (joint.name.Contains("l"))
+            if (joint.name.Contains("l") && joint.name.Length == 2)
                 leftInds.Add(joint.index-1);
-            if (joint.name.Contains("r"))
+            if (joint.name.Contains("r") && joint.name.Length == 2)
                 rightInds.Add(joint.index-1);
-        }    
-            
-        if (Application.platform == RuntimePlatform.WebGLPlayer || ! isServer){
-            var scripts = GetComponents<MonoBehaviour>();
-            foreach (var script in scripts)
-            {
-                script.enabled = false;
-            } 
-            GetComponent<MonoBehaviour>().enabled = false;
-            GetComponents<MonoBehaviour>()[6].enabled  = true;
-            //   foreach (var joint in gameObject.GetComponentsInChildren<ArticulationBody>())
-            //  {
-            //     joint.enabled = false;
-            //    joint.immovable = true;
-            //   joint.useGravity = false;
-            // }
-            // foreach (var joint in gameObject.GetComponents<ArticulationBody>())
-            // {
-            //     joint.enabled = false;
-            //    joint.immovable = true;
-            //   joint.useGravity = false;
-            // }
         }
 
     }
@@ -120,8 +95,8 @@ public class Yumi : NetworkBehaviour
     }
     void FixedUpdate()
     {
-    //handVelR = new List<float>() { .1f, 0, 0, 0, 0, 0};//null;
-   // handVelL = new List<float>() { .1f, 0, 0, 0, 0, 0 };//null;
+      //handVelR = new List<float>() { .1f, 0, 0, 0, 0, 0};//null;
+     // handVelL = new List<float>() { .1f, 0, 0, 0, 0, 0 };//null;
          if (handVelL != null || handVelR != null) 
             getJacobian();
         if (handVelL != null)
@@ -146,8 +121,11 @@ public class Yumi : NetworkBehaviour
             vals[i] = jointVelR[count];
             count++;
         }
+
+       // var c = GetComponent<NetworkIdentity>();
+      
         
-        if (isServer)
+        if (player.name.Contains("yumi"))
         {
              
              //root.GetJointPositions(jointAngles);

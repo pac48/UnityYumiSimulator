@@ -34,6 +34,7 @@ namespace Mirror
         void Awake()
         {
             manager = GetComponent<NetworkManager>();
+   
         }
 
         void OnGUI()

@@ -24,7 +24,7 @@ public class HumanController : NetworkBehaviour
         humanRigidbody = human.GetComponents<Rigidbody>()[0];
         transformHand = GameObject.Find("Bip001 R Hand").transform; 
         animator = human.GetComponent<Animator>();
-        GameObject robot = GameObject.Find("yumiLimits");
+        GameObject robot = GameObject.Find("yumiNetwork(Clone)");
         transformRobot = robot.transform;
         robot.GetComponents<MonoBehaviour>();
         RosSharp.RosBridgeClient.PoseStampedPublisherStatic.PublishedTransform = transformHand;

@@ -36,12 +36,8 @@ namespace RosSharp.RosBridgeClient
 
         public void Awake()
         {
-            if (Application.platform != RuntimePlatform.WebGLPlayer){
-                IsConnected = new ManualResetEvent(false);
-                new Thread(ConnectAndWait).Start();
-            }
-            else
-            {
+            if (Application.platform == RuntimePlatform.WebGLPlayer || MyNetworkManager.singleton.numPlayers >= 1){
+                
                 var scripts = GetComponents<MonoBehaviour>();
                 foreach (var script in scripts)
                 {
@@ -49,19 +45,12 @@ namespace RosSharp.RosBridgeClient
                 }
                 GetComponent<MonoBehaviour>().enabled = false;
                 GetComponents<MonoBehaviour>()[6].enabled  = true;
-            //    foreach (var joint in gameObject.GetComponentsInChildren<ArticulationBody>())
-             //   {
-                   
-             //       joint.immovable = true;
-             //       joint.useGravity = false;
-              //      joint.enabled = false;
-              //  }
-              //  foreach (var joint in gameObject.GetComponents<ArticulationBody>())
-              //  {
-                // joint.immovable = true;
-                //    joint.useGravity = false;
-               //     joint.enabled = false;
-              //  }
+            }
+            else
+            {
+                IsConnected = new ManualResetEvent(false);
+                new Thread(ConnectAndWait).Start();
+          
             }
             
         }
