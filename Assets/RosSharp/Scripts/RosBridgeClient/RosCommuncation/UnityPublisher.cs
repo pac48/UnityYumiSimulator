@@ -30,16 +30,13 @@ namespace RosSharp.RosBridgeClient
         {
             
             rosConnector = GetComponent<RosConnector>();
-           // if (isServer){
             publicationId = rosConnector.RosSocket.Advertise<T>(Topic);
-           // }
+ 
         }
 
         protected void Publish(T message)
         {
-        //    if (isServer){
             rosConnector.RosSocket.Publish(publicationId, message);
-         //   }
         }
     }
 }

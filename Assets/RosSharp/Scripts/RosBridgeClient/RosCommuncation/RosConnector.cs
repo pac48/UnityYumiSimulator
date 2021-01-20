@@ -16,14 +16,16 @@ limitations under the License.
 */
 
 using System;
+using System.Linq;
 using System.Threading;
 using Mirror;
 using RosSharp.RosBridgeClient.Protocols;
 using UnityEngine;
+using Object = System.Object;
 
 namespace RosSharp.RosBridgeClient
 {
-    public class RosConnector : MonoBehaviour
+    public class RosConnector : NetworkBehaviour
     {
         public int SecondsTimeout = 10;
 
@@ -34,25 +36,10 @@ namespace RosSharp.RosBridgeClient
 
         public ManualResetEvent IsConnected { get; private set; }
 
-        public void Awake()
+        public void Activate()
         {
-            if (Application.platform == RuntimePlatform.WebGLPlayer || MyNetworkManager.singleton.numPlayers >= 1){
-                
-                var scripts = GetComponents<MonoBehaviour>();
-                foreach (var script in scripts)
-                {
-                    script.enabled = false;
-                }
-                GetComponent<MonoBehaviour>().enabled = false;
-                GetComponents<MonoBehaviour>()[6].enabled  = true;
-            }
-            else
-            {
-                IsConnected = new ManualResetEvent(false);
-                new Thread(ConnectAndWait).Start();
-          
-            }
-            
+            IsConnected = new ManualResetEvent(false);
+            new Thread(ConnectAndWait).Start();
         }
 
         protected void ConnectAndWait()
