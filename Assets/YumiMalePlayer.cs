@@ -9,26 +9,29 @@ using RosSharp.RosBridgeClient;
 
 public class YumiMalePlayer : NetworkBehaviour
 {
-    private List<Action> functions = new List<Action>();
-    private PlayerType playerType;
+    protected List<Action> functions = new List<Action>();
+    private static PlayerType playerType;
     
    public void Start()
     {
-        functions.Add(() => WaitForPlayerAssign());
+        functions.Add(WaitForPlayerAssign);
     }
 
    void WaitForROSToConnect(){
        var rosConnector = GetComponent<RosConnector>();
        if (rosConnector.RosSocket == null)
            return;
-       functions.RemoveAt(functions.Count-1);
+       functions.Remove(WaitForROSToConnect);
        EnablePublishersSubscribers();
        
    }
    void EnableROS()
    {
-       GetComponent<RosConnector>().Activate();
-       functions.Add(() => WaitForROSToConnect());
+       var component = GetComponent<RosConnector>();
+       if (component != null){
+           component.Activate();
+            functions.Add(WaitForROSToConnect);
+            }
        }
    void EnablePublishersSubscribers()
    {
@@ -47,18 +50,19 @@ public class YumiMalePlayer : NetworkBehaviour
         if ((!Server2Client.playerAssigned || Server2Client.playerName.Length == 0) && !isServer){
             return;
         }
-        functions.RemoveAt(0);
+        functions.Remove(WaitForPlayerAssign);
         if (Server2Client.playerName.Contains("male") && !isServer){
-            functions.Add(() => FixedUpdateHuman());
+            functions.Add(FixedUpdateHuman);
             playerType = PlayerType.Male;
         } else if (Server2Client.playerName.Contains("yumi") && !isServer){
-            functions.Add(() => FixedUpdateYumi());
+            functions.Add(FixedUpdateYumi);
             playerType = PlayerType.Yumi;
             EnableROS();
         } else{
-            functions.Add(() => FixedUpdateServer());
-            playerType = PlayerType.Yumi;
+            functions.Add(FixedUpdateServer);
+            playerType = PlayerType.Server;
         }
+        PostAssignPlayer();
     }
 
     public void FixedUpdate()
@@ -73,5 +77,6 @@ public class YumiMalePlayer : NetworkBehaviour
     public virtual void FixedUpdateHuman(){}
     public virtual void FixedUpdateYumi() {}
     public virtual void FixedUpdateServer() {}
+    public virtual void PostAssignPlayer(){}
          
 }
