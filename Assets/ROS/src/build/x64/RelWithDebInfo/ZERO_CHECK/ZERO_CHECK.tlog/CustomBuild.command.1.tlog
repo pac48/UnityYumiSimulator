@@ -1,0 +1,10 @@
+^C:\USERS\PAULG\UNITYPROJECTS\PROJECT\ASSETS\ROS\SRC\BUILD\CMAKEFILES\EE0F51077D99B2DFD81982E45C2EE5A5\GENERATE.STAMP.RULE
+setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

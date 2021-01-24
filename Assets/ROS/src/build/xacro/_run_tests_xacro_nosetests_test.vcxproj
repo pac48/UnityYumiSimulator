@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{84B83B09-CDB8-31EC-9E66-73DED135D5F0}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>_run_tests_xacro_nosetests_test</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\2bed15c909d5019d3efdefc2d7c0900e\_run_tests_xacro_nosetests_test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/catkin/cmake/test/run_tests.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/test_results/xacro/nosetests-test.xml "\"C:/opt/ros/noetic/x64/Lib/site-packages/cmake/data/bin/cmake.exe\" -E make_directory C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/test_results/xacro" "C:/opt/ros/noetic/x64/Scripts/nosetests.exe -P --process-timeout=60 --where=C:/Users/paulg/UnityProjects/project/Assets/ROS/src/xacro/test --with-xunit --xunit-file=C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/test_results/xacro/nosetests-test.xml"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\CMakeFiles\_run_tests_xacro_nosetests_test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/catkin/cmake/test/run_tests.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/test_results/xacro/nosetests-test.xml "\"C:/opt/ros/noetic/x64/Lib/site-packages/cmake/data/bin/cmake.exe\" -E make_directory C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/test_results/xacro" "C:/opt/ros/noetic/x64/Scripts/nosetests.exe -P --process-timeout=60 --where=C:/Users/paulg/UnityProjects/project/Assets/ROS/src/xacro/test --with-xunit --xunit-file=C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/test_results/xacro/nosetests-test.xml"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\CMakeFiles\_run_tests_xacro_nosetests_test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/catkin/cmake/test/run_tests.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/test_results/xacro/nosetests-test.xml "\"C:/opt/ros/noetic/x64/Lib/site-packages/cmake/data/bin/cmake.exe\" -E make_directory C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/test_results/xacro" "C:/opt/ros/noetic/x64/Scripts/nosetests.exe -P --process-timeout=60 --where=C:/Users/paulg/UnityProjects/project/Assets/ROS/src/xacro/test --with-xunit --xunit-file=C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/test_results/xacro/nosetests-test.xml"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\CMakeFiles\_run_tests_xacro_nosetests_test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/catkin/cmake/test/run_tests.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/test_results/xacro/nosetests-test.xml "\"C:/opt/ros/noetic/x64/Lib/site-packages/cmake/data/bin/cmake.exe\" -E make_directory C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/test_results/xacro" "C:/opt/ros/noetic/x64/Scripts/nosetests.exe -P --process-timeout=60 --where=C:/Users/paulg/UnityProjects/project/Assets/ROS/src/xacro/test --with-xunit --xunit-file=C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/test_results/xacro/nosetests-test.xml"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\CMakeFiles\_run_tests_xacro_nosetests_test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\xacro\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/xacro/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/xacro/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\catkin_generated\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\catkin_generated\setup_py_interrogation.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\xacro\package.xml;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\xacro\scripts\xacro.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\xacro\setup.py;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\pkg.pc.em;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\__init__.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkg.context.pc.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig-version.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\python_distutils_install.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\python_win32_wrapper.cpp.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\safe_execute_install.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\script.py.in;C:\opt\ros\noetic\x64\share\roslint\cmake\roslint-extras.cmake;C:\opt\ros\noetic\x64\share\roslint\cmake\roslintConfig-version.cmake;C:\opt\ros\noetic\x64\share\roslint\cmake\roslintConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/xacro/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/xacro/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\catkin_generated\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\catkin_generated\setup_py_interrogation.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\xacro\package.xml;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\xacro\scripts\xacro.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\xacro\setup.py;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\pkg.pc.em;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\__init__.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkg.context.pc.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig-version.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\python_distutils_install.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\python_win32_wrapper.cpp.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\safe_execute_install.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\script.py.in;C:\opt\ros\noetic\x64\share\roslint\cmake\roslint-extras.cmake;C:\opt\ros\noetic\x64\share\roslint\cmake\roslintConfig-version.cmake;C:\opt\ros\noetic\x64\share\roslint\cmake\roslintConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/xacro/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/xacro/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\catkin_generated\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\catkin_generated\setup_py_interrogation.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\xacro\package.xml;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\xacro\scripts\xacro.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\xacro\setup.py;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\pkg.pc.em;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\__init__.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkg.context.pc.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig-version.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\python_distutils_install.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\python_win32_wrapper.cpp.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\safe_execute_install.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\script.py.in;C:\opt\ros\noetic\x64\share\roslint\cmake\roslint-extras.cmake;C:\opt\ros\noetic\x64\share\roslint\cmake\roslintConfig-version.cmake;C:\opt\ros\noetic\x64\share\roslint\cmake\roslintConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/xacro/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/xacro/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\catkin_generated\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\catkin_generated\setup_py_interrogation.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\xacro\package.xml;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\xacro\scripts\xacro.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\xacro\setup.py;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\pkg.pc.em;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\__init__.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkg.context.pc.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig-version.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\python_distutils_install.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\python_win32_wrapper.cpp.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\safe_execute_install.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\script.py.in;C:\opt\ros\noetic\x64\share\roslint\cmake\roslint-extras.cmake;C:\opt\ros\noetic\x64\share\roslint\cmake\roslintConfig-version.cmake;C:\opt\ros\noetic\x64\share\roslint\cmake\roslintConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\CMakeFiles\_run_tests_xacro_nosetests_test">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\ZERO_CHECK.vcxproj">
+      <Project>{F76576D4-8480-3F05-BCE1-6EA666B8813E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\clean_test_results_xacro.vcxproj">
+      <Project>{DF643634-5F73-332B-9FFE-D79C90C5F456}</Project>
+      <Name>clean_test_results_xacro</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\tests.vcxproj">
+      <Project>{1F14CA82-96E8-3248-B02E-F3C4EBB4CB6C}</Project>
+      <Name>tests</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

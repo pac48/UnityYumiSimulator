@@ -1,0 +1,3 @@
+"D:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\xacro_xacro.py_exec_install.dir/objects.a
+C:\mingw64\bin\ar.exe cr CMakeFiles\xacro_xacro.py_exec_install.dir/objects.a @CMakeFiles\xacro_xacro.py_exec_install.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -O2 -g -DNDEBUG   -Wl,--whole-archive CMakeFiles\xacro_xacro.py_exec_install.dir/objects.a -Wl,--no-whole-archive  -o catkin_generated\windows_wrappers\xacro_xacro.py_exec_install\xacro.exe -Wl,--out-implib,..\devel\lib\libxacro.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\xacro_xacro.py_exec_install.dir\linklibs.rsp

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\321adf47f64f1d8d3e0660943bce9129\getStaticTorques.l.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\321adf47f64f1d8d3e0660943bce9129\setTorques.l.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\acda2e9913c4c8868d1ac5b1fdaed0fd\manifest.l.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3d0d509a51b99fe72096fe068cd3e21e\dynamics_generate_messages_eus.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\dynamics_generate_messages_eus" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{38B65DE4-B16C-399C-ACD4-D249A0803FEE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

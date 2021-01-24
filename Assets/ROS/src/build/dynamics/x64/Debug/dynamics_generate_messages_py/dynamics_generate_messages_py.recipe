@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\x64\Debug\_dynamics_generate_messages_check_deps_getStaticTorques</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\x64\Debug\_dynamics_generate_messages_check_deps_setTorques</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\x64\Debug\std_msgs_generate_messages_py</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\x64\Debug\dynamics_generate_messages_py</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

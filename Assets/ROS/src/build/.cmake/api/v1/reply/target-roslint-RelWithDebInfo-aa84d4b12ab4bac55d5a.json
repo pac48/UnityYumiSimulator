@@ -1,0 +1,74 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"_roslint_create_targets",
+			"roslint_custom",
+			"roslint_python",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"C:/opt/ros/noetic/x64/share/roslint/cmake/roslint-extras.cmake",
+			"xacro/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 62,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "roslint_xacro::@3cbd8a927962083a7baa"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "roslint::@3cbd8a927962083a7baa",
+	"name" : "roslint",
+	"paths" : 
+	{
+		"build" : "xacro",
+		"source" : "xacro"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

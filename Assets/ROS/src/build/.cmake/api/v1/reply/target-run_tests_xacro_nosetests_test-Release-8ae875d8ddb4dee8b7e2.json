@@ -1,0 +1,88 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"catkin_run_tests_target",
+			"catkin_add_nosetests"
+		],
+		"files" : 
+		[
+			"C:/opt/ros/noetic/x64/share/catkin/cmake/test/tests.cmake",
+			"C:/opt/ros/noetic/x64/share/catkin/cmake/test/nosetests.cmake",
+			"xacro/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 83,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 163,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "run_tests_xacro_nosetests_test::@3cbd8a927962083a7baa",
+	"name" : "run_tests_xacro_nosetests_test",
+	"paths" : 
+	{
+		"build" : "xacro",
+		"source" : "xacro"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/xacro/CMakeFiles/run_tests_xacro_nosetests_test",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/2bed15c909d5019d3efdefc2d7c0900e/run_tests_xacro_nosetests_test.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

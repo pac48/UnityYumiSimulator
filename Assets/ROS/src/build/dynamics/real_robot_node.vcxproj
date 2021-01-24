@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BE833B42-AF07-399F-BF67-AD20B212636C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>real_robot_node</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\dynamics\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">real_robot_node.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">real_robot_node</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\dynamics\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">real_robot_node.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">real_robot_node</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\dynamics\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">real_robot_node.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">real_robot_node</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\dynamics\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">real_robot_node.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">real_robot_node</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\eigen3;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_VARIADIC_MAX=10;_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;ROS_BUILD_SHARED_LIBS=1;ROS_PACKAGE_NAME="dynamics";ROSCONSOLE_BACKEND_LOG4CXX;RL_MDL_NLOPT;BOOST_ALL_NO_LIB;RL_SG_BULLET;COIN_DLL;RL_SG_ODE;dDOUBLE;RL_SG_PQP;RL_SG_SOLID;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_VARIADIC_MAX=10;_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;ROS_BUILD_SHARED_LIBS=1;ROS_PACKAGE_NAME=\"dynamics\";ROSCONSOLE_BACKEND_LOG4CXX;RL_MDL_NLOPT;BOOST_ALL_NO_LIB;RL_SG_BULLET;COIN_DLL;RL_SG_ODE;dDOUBLE;RL_SG_PQP;RL_SG_SOLID;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\eigen3;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\eigen3;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlkins.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlmdls.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlhals.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlsgs.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlplans.lib;C:\opt\ros\noetic\x64\Lib\roscpp.lib;C:\opt\ros\noetic\x64\Lib\boost_filesystem-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\rosconsole.lib;C:\opt\ros\noetic\x64\Lib\rosconsole_log4cxx.lib;C:\opt\ros\noetic\x64\Lib\rosconsole_backend_interface.lib;C:\opt\ros\noetic\x64\Lib\log4cxx.lib;C:\opt\ros\noetic\x64\Lib\boost_regex-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\roscpp_serialization.lib;C:\opt\ros\noetic\x64\Lib\xmlrpcpp.lib;C:\opt\ros\noetic\x64\Lib\rostime.lib;C:\opt\ros\noetic\x64\Lib\cpp_common.lib;C:\opt\ros\noetic\x64\Lib\boost_system-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_thread-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_chrono-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_date_time-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_atomic-vc140-mt.lib;C:\opt\ros\noetic\x64\lib\console_bridge.lib;ws2_32.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlkins.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlmdls.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\nlopt.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlsgs.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\libxml2.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\libxslt.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\libiconv.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\zlib.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\BulletCollision.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\BulletDynamics.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\BulletSoftBody.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\LinearMath.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\Coin4.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\ode_double.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\PQP.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\solid3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/Debug/real_robot_node.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/dynamics/Debug/real_robot_node.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\eigen3;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;ROS_BUILD_SHARED_LIBS=1;ROS_PACKAGE_NAME="dynamics";ROSCONSOLE_BACKEND_LOG4CXX;RL_MDL_NLOPT;BOOST_ALL_NO_LIB;RL_SG_BULLET;COIN_DLL;RL_SG_ODE;dDOUBLE;RL_SG_PQP;RL_SG_SOLID;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;ROS_BUILD_SHARED_LIBS=1;ROS_PACKAGE_NAME=\"dynamics\";ROSCONSOLE_BACKEND_LOG4CXX;RL_MDL_NLOPT;BOOST_ALL_NO_LIB;RL_SG_BULLET;COIN_DLL;RL_SG_ODE;dDOUBLE;RL_SG_PQP;RL_SG_SOLID;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\eigen3;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\eigen3;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlkins.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlmdls.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlhals.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlsgs.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlplans.lib;C:\opt\ros\noetic\x64\Lib\roscpp.lib;C:\opt\ros\noetic\x64\Lib\boost_filesystem-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\rosconsole.lib;C:\opt\ros\noetic\x64\Lib\rosconsole_log4cxx.lib;C:\opt\ros\noetic\x64\Lib\rosconsole_backend_interface.lib;C:\opt\ros\noetic\x64\Lib\log4cxx.lib;C:\opt\ros\noetic\x64\Lib\boost_regex-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\roscpp_serialization.lib;C:\opt\ros\noetic\x64\Lib\xmlrpcpp.lib;C:\opt\ros\noetic\x64\Lib\rostime.lib;C:\opt\ros\noetic\x64\Lib\cpp_common.lib;C:\opt\ros\noetic\x64\Lib\boost_system-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_thread-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_chrono-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_date_time-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_atomic-vc140-mt.lib;C:\opt\ros\noetic\x64\lib\console_bridge.lib;ws2_32.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlkins.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlmdls.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\nlopt.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlsgs.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\libxml2.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\libxslt.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\libiconv.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\zlib.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\BulletCollision.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\BulletDynamics.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\BulletSoftBody.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\LinearMath.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\Coin4.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\ode_double.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\PQP.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\solid3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/Release/real_robot_node.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/dynamics/Release/real_robot_node.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\eigen3;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;ROS_BUILD_SHARED_LIBS=1;ROS_PACKAGE_NAME="dynamics";ROSCONSOLE_BACKEND_LOG4CXX;RL_MDL_NLOPT;BOOST_ALL_NO_LIB;RL_SG_BULLET;COIN_DLL;RL_SG_ODE;dDOUBLE;RL_SG_PQP;RL_SG_SOLID;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;ROS_BUILD_SHARED_LIBS=1;ROS_PACKAGE_NAME=\"dynamics\";ROSCONSOLE_BACKEND_LOG4CXX;RL_MDL_NLOPT;BOOST_ALL_NO_LIB;RL_SG_BULLET;COIN_DLL;RL_SG_ODE;dDOUBLE;RL_SG_PQP;RL_SG_SOLID;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\eigen3;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\eigen3;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlkins.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlmdls.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlhals.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlsgs.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlplans.lib;C:\opt\ros\noetic\x64\Lib\roscpp.lib;C:\opt\ros\noetic\x64\Lib\boost_filesystem-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\rosconsole.lib;C:\opt\ros\noetic\x64\Lib\rosconsole_log4cxx.lib;C:\opt\ros\noetic\x64\Lib\rosconsole_backend_interface.lib;C:\opt\ros\noetic\x64\Lib\log4cxx.lib;C:\opt\ros\noetic\x64\Lib\boost_regex-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\roscpp_serialization.lib;C:\opt\ros\noetic\x64\Lib\xmlrpcpp.lib;C:\opt\ros\noetic\x64\Lib\rostime.lib;C:\opt\ros\noetic\x64\Lib\cpp_common.lib;C:\opt\ros\noetic\x64\Lib\boost_system-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_thread-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_chrono-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_date_time-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_atomic-vc140-mt.lib;C:\opt\ros\noetic\x64\lib\console_bridge.lib;ws2_32.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlkins.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlmdls.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\nlopt.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlsgs.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\libxml2.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\libxslt.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\libiconv.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\zlib.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\BulletCollision.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\BulletDynamics.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\BulletSoftBody.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\LinearMath.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\Coin4.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\ode_double.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\PQP.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\solid3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/MinSizeRel/real_robot_node.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/dynamics/MinSizeRel/real_robot_node.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\eigen3;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;ROS_BUILD_SHARED_LIBS=1;ROS_PACKAGE_NAME="dynamics";ROSCONSOLE_BACKEND_LOG4CXX;RL_MDL_NLOPT;BOOST_ALL_NO_LIB;RL_SG_BULLET;COIN_DLL;RL_SG_ODE;dDOUBLE;RL_SG_PQP;RL_SG_SOLID;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_VARIADIC_MAX=10;_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;ROS_BUILD_SHARED_LIBS=1;ROS_PACKAGE_NAME=\"dynamics\";ROSCONSOLE_BACKEND_LOG4CXX;RL_MDL_NLOPT;BOOST_ALL_NO_LIB;RL_SG_BULLET;COIN_DLL;RL_SG_ODE;dDOUBLE;RL_SG_PQP;RL_SG_SOLID;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\eigen3;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\eigen3;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\bullet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlkins.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlmdls.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlhals.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlsgs.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlplans.lib;C:\opt\ros\noetic\x64\Lib\roscpp.lib;C:\opt\ros\noetic\x64\Lib\boost_filesystem-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\rosconsole.lib;C:\opt\ros\noetic\x64\Lib\rosconsole_log4cxx.lib;C:\opt\ros\noetic\x64\Lib\rosconsole_backend_interface.lib;C:\opt\ros\noetic\x64\Lib\log4cxx.lib;C:\opt\ros\noetic\x64\Lib\boost_regex-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\roscpp_serialization.lib;C:\opt\ros\noetic\x64\Lib\xmlrpcpp.lib;C:\opt\ros\noetic\x64\Lib\rostime.lib;C:\opt\ros\noetic\x64\Lib\cpp_common.lib;C:\opt\ros\noetic\x64\Lib\boost_system-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_thread-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_chrono-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_date_time-vc140-mt.lib;C:\opt\ros\noetic\x64\Lib\boost_atomic-vc140-mt.lib;C:\opt\ros\noetic\x64\lib\console_bridge.lib;ws2_32.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlkins.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlmdls.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\nlopt.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\rlsgs.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\libxml2.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\libxslt.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\libiconv.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\zlib.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\BulletCollision.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\BulletDynamics.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\BulletSoftBody.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\LinearMath.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\Coin4.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\ode_double.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\PQP.lib;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\solid3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/RelWithDebInfo/real_robot_node.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/dynamics/RelWithDebInfo/real_robot_node.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/dynamics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config-version.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export-release.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\share\dynamics\cmake\dynamics-msg-paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.develspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.installspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\ordered_paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\cmake\dynamics-genmsg.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\package.xml;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\pkg.pc.em;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkg.context.pc.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig-version.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig.cmake.in;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig-version.cmake;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencpp-extras.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig-version.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneus-extras.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig-version.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlisp-extras.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig-version.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsg-extras.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig-version.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.cmake.em;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.context.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-extras.cmake.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.develspace.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.installspace.in;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejs-extras.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig-version.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpy-extras.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig-version.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsole-extras.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscpp-msg-extras.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-paths.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcpp-extras.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig-version.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/dynamics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config-version.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export-release.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\share\dynamics\cmake\dynamics-msg-paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.develspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.installspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\ordered_paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\cmake\dynamics-genmsg.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\package.xml;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\pkg.pc.em;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkg.context.pc.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig-version.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig.cmake.in;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig-version.cmake;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencpp-extras.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig-version.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneus-extras.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig-version.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlisp-extras.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig-version.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsg-extras.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig-version.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.cmake.em;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.context.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-extras.cmake.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.develspace.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.installspace.in;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejs-extras.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig-version.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpy-extras.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig-version.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsole-extras.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscpp-msg-extras.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-paths.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcpp-extras.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig-version.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/dynamics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config-version.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export-release.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\share\dynamics\cmake\dynamics-msg-paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.develspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.installspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\ordered_paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\cmake\dynamics-genmsg.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\package.xml;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\pkg.pc.em;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkg.context.pc.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig-version.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig.cmake.in;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig-version.cmake;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencpp-extras.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig-version.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneus-extras.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig-version.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlisp-extras.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig-version.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsg-extras.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig-version.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.cmake.em;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.context.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-extras.cmake.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.develspace.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.installspace.in;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejs-extras.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig-version.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpy-extras.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig-version.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsole-extras.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscpp-msg-extras.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-paths.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcpp-extras.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig-version.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/dynamics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config-version.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export-release.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\share\dynamics\cmake\dynamics-msg-paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.develspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.installspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\ordered_paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\cmake\dynamics-genmsg.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\package.xml;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\pkg.pc.em;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkg.context.pc.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig-version.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig.cmake.in;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig-version.cmake;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencpp-extras.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig-version.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneus-extras.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig-version.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlisp-extras.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig-version.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsg-extras.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig-version.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.cmake.em;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.context.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-extras.cmake.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.develspace.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.installspace.in;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejs-extras.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig-version.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpy-extras.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig-version.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsole-extras.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscpp-msg-extras.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-paths.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcpp-extras.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig-version.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\src\real_robot_node.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\ZERO_CHECK.vcxproj">
+      <Project>{F76576D4-8480-3F05-BCE1-6EA666B8813E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\dynamics_generate_messages_cpp.vcxproj">
+      <Project>{7C5BA290-98E8-3D61-ACA1-EC8699160BAC}</Project>
+      <Name>dynamics_generate_messages_cpp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\dynamics_generate_messages_eus.vcxproj">
+      <Project>{D6DA7E1B-9C26-352D-9470-B6378404F218}</Project>
+      <Name>dynamics_generate_messages_eus</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\dynamics_generate_messages_lisp.vcxproj">
+      <Project>{31F378ED-4D38-3C08-AFD0-805A39BF92FB}</Project>
+      <Name>dynamics_generate_messages_lisp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\dynamics_generate_messages_nodejs.vcxproj">
+      <Project>{278DD8B7-937A-3020-93A7-AD1848B5291D}</Project>
+      <Name>dynamics_generate_messages_nodejs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\dynamics_generate_messages_py.vcxproj">
+      <Project>{93CBD375-9E58-3F62-A982-395CA520010F}</Project>
+      <Name>dynamics_generate_messages_py</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

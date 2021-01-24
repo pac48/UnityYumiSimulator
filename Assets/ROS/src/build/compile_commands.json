@@ -1,0 +1,37 @@
+[
+{
+  "directory": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\Llvm\\x64\\bin\\clang-cl.exe  /nologo -TP -DNOMINMAX -DROS_BUILD_SHARED_LIBS=1 -DWIN32_LEAN_AND_MEAN -D_USE_MATH_DEFINES /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /D _VARIADIC_MAX=10 /Zc:__cplusplus /FoCMakeFiles\\Project__setup_util.py_exec_install_python.dir\\catkin_generated\\add_python_executable\\Project__setup_util.py_exec_install_python\\_setup_util.cpp.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\paulg\\UnityProjects\\project\\Assets\\ROS\\src\\build\\catkin_generated\\add_python_executable\\Project__setup_util.py_exec_install_python\\_setup_util.cpp",
+  "file": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/catkin_generated/add_python_executable/Project__setup_util.py_exec_install_python/_setup_util.cpp"
+},
+{
+  "directory": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\Llvm\\x64\\bin\\clang-cl.exe  /nologo -TP -DBOOST_ALL_NO_LIB -DCOIN_DLL -DNOMINMAX -DRL_MDL_NLOPT -DRL_SG_BULLET -DRL_SG_ODE -DRL_SG_PQP -DRL_SG_SOLID -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"dynamics\\\" -DWIN32_LEAN_AND_MEAN -D_USE_MATH_DEFINES -DdDOUBLE -Idevel\\include -I\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\include\\rl-0.7.0\\rl\\std\" -IC:\\opt\\ros\\noetic\\x64\\include -IC:\\opt\\ros\\noetic\\x64\\share\\xmlrpcpp\\cmake\\..\\..\\..\\include\\xmlrpcpp -I\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\include\\rl-0.7.0\" -I\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\include\\eigen3\" -I\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\include\" -I\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\include\\bullet\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /D _VARIADIC_MAX=10 /Zc:__cplusplus -std:c++17 /Fodynamics\\CMakeFiles\\real_robot_node.dir\\src\\real_robot_node.cpp.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\paulg\\UnityProjects\\project\\Assets\\ROS\\src\\dynamics\\src\\real_robot_node.cpp",
+  "file": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/src/real_robot_node.cpp"
+},
+{
+  "directory": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\Llvm\\x64\\bin\\clang-cl.exe  /nologo -TP -DNOMINMAX -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"state_server\\\" -DWIN32_LEAN_AND_MEAN -D_USE_MATH_DEFINES -IC:\\opt\\ros\\noetic\\x64\\include -IC:\\opt\\ros\\noetic\\x64\\share\\xmlrpcpp\\cmake\\..\\..\\..\\include\\xmlrpcpp /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /D _VARIADIC_MAX=10 /Zc:__cplusplus /Fostate_server\\CMakeFiles\\client_node.dir\\src\\client_node.cpp.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\paulg\\UnityProjects\\project\\Assets\\ROS\\src\\state_server\\src\\client_node.cpp",
+  "file": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/state_server/src/client_node.cpp"
+},
+{
+  "directory": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\Llvm\\x64\\bin\\clang-cl.exe  /nologo -TP -DNOMINMAX -DROS_BUILD_SHARED_LIBS=1 -DWIN32_LEAN_AND_MEAN -D_USE_MATH_DEFINES /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /D _VARIADIC_MAX=10 /Zc:__cplusplus /Foxacro\\CMakeFiles\\xacro_xacro.py_exec_install_python.dir\\catkin_generated\\add_python_executable\\xacro_xacro.py_exec_install_python\\xacro.cpp.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\paulg\\UnityProjects\\project\\Assets\\ROS\\src\\build\\xacro\\catkin_generated\\add_python_executable\\xacro_xacro.py_exec_install_python\\xacro.cpp",
+  "file": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/xacro/catkin_generated/add_python_executable/xacro_xacro.py_exec_install_python/xacro.cpp"
+},
+{
+  "directory": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\Llvm\\x64\\bin\\clang-cl.exe  /nologo -TP -DNOMINMAX -DROS_BUILD_SHARED_LIBS=1 -DWIN32_LEAN_AND_MEAN -D_USE_MATH_DEFINES /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /D _VARIADIC_MAX=10 /Zc:__cplusplus /Foxacro\\CMakeFiles\\xacro_xacro.py_exec_devel.dir\\catkin_generated\\add_python_executable\\xacro_xacro.py_exec_devel\\xacro.cpp.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\paulg\\UnityProjects\\project\\Assets\\ROS\\src\\build\\xacro\\catkin_generated\\add_python_executable\\xacro_xacro.py_exec_devel\\xacro.cpp",
+  "file": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/xacro/catkin_generated/add_python_executable/xacro_xacro.py_exec_devel/xacro.cpp"
+},
+{
+  "directory": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\Llvm\\x64\\bin\\clang-cl.exe  /nologo -TP -DNOMINMAX -DROS_BUILD_SHARED_LIBS=1 -DWIN32_LEAN_AND_MEAN -D_USE_MATH_DEFINES /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /D _VARIADIC_MAX=10 /Zc:__cplusplus /Foxacro\\CMakeFiles\\xacro_xacro.py_exec_install.dir\\catkin_generated\\add_python_executable\\xacro_xacro.py_exec_install\\xacro.cpp.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\paulg\\UnityProjects\\project\\Assets\\ROS\\src\\build\\xacro\\catkin_generated\\add_python_executable\\xacro_xacro.py_exec_install\\xacro.cpp",
+  "file": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/xacro/catkin_generated/add_python_executable/xacro_xacro.py_exec_install/xacro.cpp"
+},
+{
+  "directory": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\Llvm\\x64\\bin\\clang-cl.exe  /nologo -TP -DNOMINMAX -DROS_BUILD_SHARED_LIBS=1 -DWIN32_LEAN_AND_MEAN -D_USE_MATH_DEFINES /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /D _VARIADIC_MAX=10 /Zc:__cplusplus /Foxacro\\CMakeFiles\\xacro_xacro.py_exec_cip_devel_python.dir\\catkin_generated\\add_python_executable\\xacro_xacro.py_exec_cip_devel_python\\xacro.cpp.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\paulg\\UnityProjects\\project\\Assets\\ROS\\src\\build\\xacro\\catkin_generated\\add_python_executable\\xacro_xacro.py_exec_cip_devel_python\\xacro.cpp",
+  "file": "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/xacro/catkin_generated/add_python_executable/xacro_xacro.py_exec_cip_devel_python/xacro.cpp"
+}
+]

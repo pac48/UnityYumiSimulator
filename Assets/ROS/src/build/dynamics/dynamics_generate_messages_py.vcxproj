@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93CBD375-9E58-3F62-A982-395CA520010F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>dynamics_generate_messages_py</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\include;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\include\rl-0.7.0\rl\std;C:\opt\ros\noetic\x64\include;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\..\..\..\include\xmlrpcpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\17b9534b8f4f0e97cb7ee29d13796e38\_getStaticTorques.py.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Python code from SRV dynamics/getStaticTorques</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/genpy/cmake/../../../lib/genpy/gensrv_py.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/srv/getStaticTorques.srv -Istd_msgs:C:/opt/ros/noetic/x64/share/std_msgs/cmake/../msg -p dynamics -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/site-packages/dynamics/srv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\opt\ros\noetic\x64\Lib\genpy\gensrv_py.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\srv\getStaticTorques.srv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_getStaticTorques.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Python code from SRV dynamics/getStaticTorques</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/genpy/cmake/../../../lib/genpy/gensrv_py.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/srv/getStaticTorques.srv -Istd_msgs:C:/opt/ros/noetic/x64/share/std_msgs/cmake/../msg -p dynamics -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/site-packages/dynamics/srv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\opt\ros\noetic\x64\Lib\genpy\gensrv_py.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\srv\getStaticTorques.srv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_getStaticTorques.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating Python code from SRV dynamics/getStaticTorques</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/genpy/cmake/../../../lib/genpy/gensrv_py.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/srv/getStaticTorques.srv -Istd_msgs:C:/opt/ros/noetic/x64/share/std_msgs/cmake/../msg -p dynamics -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/site-packages/dynamics/srv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\opt\ros\noetic\x64\Lib\genpy\gensrv_py.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\srv\getStaticTorques.srv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_getStaticTorques.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating Python code from SRV dynamics/getStaticTorques</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/genpy/cmake/../../../lib/genpy/gensrv_py.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/srv/getStaticTorques.srv -Istd_msgs:C:/opt/ros/noetic/x64/share/std_msgs/cmake/../msg -p dynamics -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/site-packages/dynamics/srv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\opt\ros\noetic\x64\Lib\genpy\gensrv_py.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\srv\getStaticTorques.srv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_getStaticTorques.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\17b9534b8f4f0e97cb7ee29d13796e38\_setTorques.py.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Python code from SRV dynamics/setTorques</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/genpy/cmake/../../../lib/genpy/gensrv_py.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/srv/setTorques.srv -Istd_msgs:C:/opt/ros/noetic/x64/share/std_msgs/cmake/../msg -p dynamics -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/site-packages/dynamics/srv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\opt\ros\noetic\x64\Lib\genpy\gensrv_py.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\srv\setTorques.srv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_setTorques.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Python code from SRV dynamics/setTorques</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/genpy/cmake/../../../lib/genpy/gensrv_py.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/srv/setTorques.srv -Istd_msgs:C:/opt/ros/noetic/x64/share/std_msgs/cmake/../msg -p dynamics -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/site-packages/dynamics/srv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\opt\ros\noetic\x64\Lib\genpy\gensrv_py.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\srv\setTorques.srv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_setTorques.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating Python code from SRV dynamics/setTorques</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/genpy/cmake/../../../lib/genpy/gensrv_py.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/srv/setTorques.srv -Istd_msgs:C:/opt/ros/noetic/x64/share/std_msgs/cmake/../msg -p dynamics -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/site-packages/dynamics/srv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\opt\ros\noetic\x64\Lib\genpy\gensrv_py.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\srv\setTorques.srv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_setTorques.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating Python code from SRV dynamics/setTorques</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/genpy/cmake/../../../lib/genpy/gensrv_py.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/srv/setTorques.srv -Istd_msgs:C:/opt/ros/noetic/x64/share/std_msgs/cmake/../msg -p dynamics -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/site-packages/dynamics/srv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\opt\ros\noetic\x64\Lib\genpy\gensrv_py.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\srv\setTorques.srv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_setTorques.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\17b9534b8f4f0e97cb7ee29d13796e38\__init__.py.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating Python srv __init__.py for dynamics</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/site-packages/dynamics/srv --initpy
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\opt\ros\noetic\x64\Lib\genpy\genmsg_py.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_getStaticTorques.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_setTorques.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\__init__.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating Python srv __init__.py for dynamics</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/site-packages/dynamics/srv --initpy
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\opt\ros\noetic\x64\Lib\genpy\genmsg_py.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_getStaticTorques.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_setTorques.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\__init__.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating Python srv __init__.py for dynamics</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/site-packages/dynamics/srv --initpy
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\opt\ros\noetic\x64\Lib\genpy\genmsg_py.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_getStaticTorques.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_setTorques.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\__init__.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating Python srv __init__.py for dynamics</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/lib/site-packages/dynamics/srv --initpy
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\opt\ros\noetic\x64\Lib\genpy\genmsg_py.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_getStaticTorques.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_setTorques.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\__init__.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3d0d509a51b99fe72096fe068cd3e21e\dynamics_generate_messages_py.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_getStaticTorques.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_setTorques.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\__init__.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\dynamics_generate_messages_py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_getStaticTorques.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_setTorques.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\__init__.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\dynamics_generate_messages_py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_getStaticTorques.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_setTorques.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\__init__.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\dynamics_generate_messages_py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_getStaticTorques.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\_setTorques.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\lib\site-packages\dynamics\srv\__init__.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\dynamics_generate_messages_py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/dynamics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config-version.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export-release.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\share\dynamics\cmake\dynamics-msg-paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.develspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.installspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\ordered_paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\cmake\dynamics-genmsg.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\package.xml;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\pkg.pc.em;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkg.context.pc.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig-version.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig.cmake.in;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig-version.cmake;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencpp-extras.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig-version.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneus-extras.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig-version.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlisp-extras.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig-version.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsg-extras.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig-version.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.cmake.em;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.context.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-extras.cmake.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.develspace.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.installspace.in;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejs-extras.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig-version.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpy-extras.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig-version.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsole-extras.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscpp-msg-extras.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-paths.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcpp-extras.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig-version.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/dynamics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config-version.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export-release.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\share\dynamics\cmake\dynamics-msg-paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.develspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.installspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\ordered_paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\cmake\dynamics-genmsg.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\package.xml;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\pkg.pc.em;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkg.context.pc.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig-version.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig.cmake.in;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig-version.cmake;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencpp-extras.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig-version.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneus-extras.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig-version.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlisp-extras.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig-version.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsg-extras.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig-version.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.cmake.em;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.context.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-extras.cmake.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.develspace.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.installspace.in;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejs-extras.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig-version.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpy-extras.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig-version.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsole-extras.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscpp-msg-extras.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-paths.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcpp-extras.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig-version.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/dynamics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config-version.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export-release.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\share\dynamics\cmake\dynamics-msg-paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.develspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.installspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\ordered_paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\cmake\dynamics-genmsg.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\package.xml;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\pkg.pc.em;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkg.context.pc.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig-version.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig.cmake.in;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig-version.cmake;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencpp-extras.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig-version.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneus-extras.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig-version.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlisp-extras.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig-version.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsg-extras.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig-version.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.cmake.em;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.context.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-extras.cmake.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.develspace.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.installspace.in;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejs-extras.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig-version.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpy-extras.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig-version.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsole-extras.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscpp-msg-extras.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-paths.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcpp-extras.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig-version.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/dynamics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config-version.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-config.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export-release.cmake;C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\lib\cmake\rl-0.7.0\rl-export.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\devel\share\dynamics\cmake\dynamics-msg-paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.develspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\dynamics-msg-extras.cmake.installspace.in;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\ordered_paths.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\catkin_generated\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\cmake\dynamics-genmsg.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\package.xml;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\pkg.pc.em;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkg.context.pc.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig-version.cmake.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\pkgConfig.cmake.in;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig-version.cmake;C:\opt\ros\noetic\x64\share\cpp_common\cmake\cpp_commonConfig.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencpp-extras.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig-version.cmake;C:\opt\ros\noetic\x64\share\gencpp\cmake\gencppConfig.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneus-extras.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig-version.cmake;C:\opt\ros\noetic\x64\share\geneus\cmake\geneusConfig.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlisp-extras.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig-version.cmake;C:\opt\ros\noetic\x64\share\genlisp\cmake\genlispConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsg-extras.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig-version.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\genmsgConfig.cmake;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.cmake.em;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-genmsg.context.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-extras.cmake.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.develspace.in;C:\opt\ros\noetic\x64\share\genmsg\cmake\pkg-msg-paths.cmake.installspace.in;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejs-extras.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig-version.cmake;C:\opt\ros\noetic\x64\share\gennodejs\cmake\gennodejsConfig.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpy-extras.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig-version.cmake;C:\opt\ros\noetic\x64\share\genpy\cmake\genpyConfig.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_generation\cmake\message_generationConfig.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\message_runtime\cmake\message_runtimeConfig.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsole-extras.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosconsole\cmake\rosconsoleConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscpp-msg-extras.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp\cmake\roscppConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_serialization\cmake\roscpp_serializationConfig.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig-version.cmake;C:\opt\ros\noetic\x64\share\roscpp_traits\cmake\roscpp_traitsConfig.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\rosgraph_msgs\cmake\rosgraph_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig-version.cmake;C:\opt\ros\noetic\x64\share\rostime\cmake\rostimeConfig.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-extras.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgs-msg-paths.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig-version.cmake;C:\opt\ros\noetic\x64\share\std_msgs\cmake\std_msgsConfig.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcpp-extras.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig-version.cmake;C:\opt\ros\noetic\x64\share\xmlrpcpp\cmake\xmlrpcppConfig.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\dynamics_generate_messages_py">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\ZERO_CHECK.vcxproj">
+      <Project>{F76576D4-8480-3F05-BCE1-6EA666B8813E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\_dynamics_generate_messages_check_deps_getStaticTorques.vcxproj">
+      <Project>{F16EE7DF-B337-3DBE-874C-5CC7CDC07458}</Project>
+      <Name>_dynamics_generate_messages_check_deps_getStaticTorques</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\_dynamics_generate_messages_check_deps_setTorques.vcxproj">
+      <Project>{0F6202FE-C6E6-34DC-B8C2-B8E01CE2D5C5}</Project>
+      <Name>_dynamics_generate_messages_check_deps_setTorques</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\std_msgs_generate_messages_py.vcxproj">
+      <Project>{CD2EACD4-A977-3B8F-9A79-46B693E0A3DA}</Project>
+      <Name>std_msgs_generate_messages_py</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

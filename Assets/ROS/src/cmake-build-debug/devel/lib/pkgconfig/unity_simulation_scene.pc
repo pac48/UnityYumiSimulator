@@ -1,0 +1,8 @@
+prefix=C:/Users/paulg/UnityProjects/project/Assets/ROS/src/cmake-build-debug/devel
+
+Name: unity_simulation_scene
+Description: Description of unity_simulation_scene
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,20 @@
+^C:\USERS\PAULG\UNITYPROJECTS\PROJECT\ASSETS\ROS\SRC\BUILD\CMAKEFILES\3D0D509A51B99FE72096FE068CD3E21E\_DYNAMICS_GENERATE_MESSAGES_CHECK_DEPS_GETSTATICTORQUES.RULE
+setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py dynamics C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/srv/getStaticTorques.srv 
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PAULG\UNITYPROJECTS\PROJECT\ASSETS\ROS\SRC\DYNAMICS\CMAKELISTS.TXT
+setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/dynamics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

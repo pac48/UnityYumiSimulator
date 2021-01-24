@@ -1,0 +1,59 @@
+"D:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - NMake Makefiles" C:\Users\paulg\UnityProjects\project\Assets\ROS\src
+-- Using CATKIN_DEVEL_PREFIX: C:/Users/paulg/UnityProjects/project/Assets/ROS/src/cmake-build-release/devel
+-- Using CMAKE_PREFIX_PATH: C:\opt\ros\noetic\x64\tools\vcpkg\installed\x64-windows;C:/Users/paulg/UnityProjects/project/Assets/ROS/devel;c:\opt\ros\noetic\x64
+-- This workspace overlays: C:/Users/paulg/UnityProjects/project/Assets/ROS/devel;c:/opt/ros/noetic/x64
+-- Using PYTHON_EXECUTABLE: C:/opt/ros/noetic/x64/python.exe
+-- Using default Python package layout
+-- Using empy: C:/opt/ros/noetic/x64/lib/site-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: C:/Users/paulg/UnityProjects/project/Assets/ROS/src/cmake-build-release/test_results
+-- Found gtest: gtests will be built
+-- Using Python nosetests: C:/opt/ros/noetic/x64/Scripts/nosetests.exe
+-- catkin 0.8.9
+-- BUILD_SHARED_LIBS is on
+Error processing line 3 of C:\opt\ros\noetic\x64\lib\site-packages\extra.pth:
+
+  Traceback (most recent call last):
+    File "site.py", line 169, in addpackage
+    File "<string>", line 1, in <module>
+  AttributeError: 'NoneType' object has no attribute 'split'
+
+Remainder of file ignored
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 6 packages in topological order:
+-- ~~  - dynamics
+-- ~~  - state_server
+-- ~~  - unity_simulation_scene
+-- ~~  - xacro
+-- ~~  - yumi_description
+-- ~~  - yumi_launch
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'dynamics'
+-- ==> add_subdirectory(dynamics)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- dynamics: 0 messages, 2 services
+-- +++ processing catkin package: 'state_server'
+-- ==> add_subdirectory(state_server)
+-- +++ processing catkin package: 'unity_simulation_scene'
+-- ==> add_subdirectory(unity_simulation_scene)
+-- +++ processing catkin package: 'xacro'
+-- ==> add_subdirectory(xacro)
+-- Installing devel-space wrapper C:/Users/paulg/UnityProjects/project/Assets/ROS/src/xacro/scripts/xacro.py to C:/Users/paulg/UnityProjects/project/Assets/ROS/src/cmake-build-release/devel/lib/xacro
+-- +++ processing catkin package: 'yumi_description'
+-- ==> add_subdirectory(yumi_description)
+-- +++ processing catkin package: 'yumi_launch'
+-- ==> add_subdirectory(yumi_launch)
+CMake Warning (dev) at cmake-build-release/devel/share/yumi_description/cmake/yumi_descriptionConfig.cmake:77:
+  Syntax Warning in cmake code at column 61
+
+  Argument not separated from preceding token by whitespace.
+Call Stack (most recent call first):
+  C:/opt/ros/noetic/x64/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  yumi_launch/CMakeLists.txt:7 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/paulg/UnityProjects/project/Assets/ROS/src/cmake-build-release

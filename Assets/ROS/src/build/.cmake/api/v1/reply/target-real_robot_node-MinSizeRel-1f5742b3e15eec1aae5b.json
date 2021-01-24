@@ -1,0 +1,629 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "devel/lib/dynamics/MinSizeRel/real_robot_node.exe"
+		},
+		{
+			"path" : "devel/lib/dynamics/MinSizeRel/real_robot_node.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_dependencies",
+			"add_compile_options",
+			"include",
+			"find_package",
+			"add_definitions",
+			"configure_shared_library_build_settings",
+			"include_directories",
+			"gencpp_append_include_dirs",
+			"_generate_msg_cpp",
+			"_generate_srv_cpp",
+			"generate_messages"
+		],
+		"files" : 
+		[
+			"dynamics/CMakeLists.txt",
+			"C:/opt/ros/noetic/x64/share/catkin/cmake/platform/windows.cmake",
+			"C:/opt/ros/noetic/x64/share/catkin/cmake/all.cmake",
+			"C:/opt/ros/noetic/x64/share/catkin/cmake/catkinConfig.cmake",
+			"CMakeLists.txt",
+			"C:/opt/ros/noetic/x64/share/rosconsole/cmake/rosconsole-extras.cmake",
+			"C:/opt/ros/noetic/x64/share/rosconsole/cmake/rosconsoleConfig.cmake",
+			"C:/opt/ros/noetic/x64/share/roscpp/cmake/roscppConfig.cmake",
+			"C:/opt/ros/noetic/x64/share/catkin/cmake/tools/libraries.cmake",
+			"C:/opt/ros/noetic/x64/share/gencpp/cmake/gencpp-extras.cmake",
+			"build/dynamics/cmake/dynamics-genmsg.cmake",
+			"C:/opt/ros/noetic/x64/share/genmsg/cmake/genmsg-extras.cmake",
+			"C:/Program Files/Robotics Library/0.7.0/MSVC/14.1/x64/lib/cmake/rl-0.7.0/rl-config.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 58,
+				"parent" : 4
+			},
+			{
+				"file" : 3,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 20,
+				"parent" : 6
+			},
+			{
+				"file" : 2,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 164,
+				"parent" : 8
+			},
+			{
+				"file" : 1,
+				"parent" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 105,
+				"parent" : 10
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 91,
+				"parent" : 10
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 13
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 76,
+				"parent" : 14
+			},
+			{
+				"file" : 7,
+				"parent" : 15
+			},
+			{
+				"command" : 5,
+				"file" : 7,
+				"line" : 197,
+				"parent" : 16
+			},
+			{
+				"file" : 6,
+				"parent" : 17
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 222,
+				"parent" : 18
+			},
+			{
+				"file" : 5,
+				"parent" : 19
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 12,
+				"parent" : 20
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 174,
+				"parent" : 8
+			},
+			{
+				"command" : 6,
+				"file" : 8,
+				"line" : 18,
+				"parent" : 22
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 8,
+				"parent" : 20
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 97,
+				"parent" : 10
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 85,
+				"parent" : 10
+			},
+			{
+				"command" : 12,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 11,
+				"line" : 307,
+				"parent" : 27
+			},
+			{
+				"file" : 10,
+				"parent" : 28
+			},
+			{
+				"command" : 11,
+				"file" : 10,
+				"line" : 38,
+				"parent" : 29
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 51,
+				"parent" : 30
+			},
+			{
+				"command" : 9,
+				"file" : 9,
+				"line" : 46,
+				"parent" : 31
+			},
+			{
+				"command" : 8,
+				"file" : 9,
+				"line" : 63,
+				"parent" : 32
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"file" : 12,
+				"parent" : 34
+			},
+			{
+				"command" : 8,
+				"file" : 12,
+				"line" : 48,
+				"parent" : 35
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 31,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG   /D _VARIADIC_MAX=10"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "/Zc:__cplusplus"
+				},
+				{
+					"fragment" : "-std:c++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_ALL_NO_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "COIN_DLL"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "NOMINMAX"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "RL_MDL_NLOPT"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "RL_SG_BULLET"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "RL_SG_ODE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "RL_SG_PQP"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "RL_SG_SOLID"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "ROSCONSOLE_BACKEND_LOG4CXX"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "ROS_BUILD_SHARED_LIBS=1"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "ROS_PACKAGE_NAME=\"dynamics\""
+				},
+				{
+					"backtrace" : 25,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "_USE_MATH_DEFINES"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "dDOUBLE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 33,
+					"path" : "C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/include"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "C:/Program Files/Robotics Library/0.7.0/MSVC/14.1/x64/include/rl-0.7.0/rl/std"
+				},
+				{
+					"backtrace" : 37,
+					"path" : "C:/opt/ros/noetic/x64/include"
+				},
+				{
+					"backtrace" : 37,
+					"path" : "C:/opt/ros/noetic/x64/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Program Files/Robotics Library/0.7.0/MSVC/14.1/x64/include/rl-0.7.0"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Program Files/Robotics Library/0.7.0/MSVC/14.1/x64/include/eigen3"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Program Files/Robotics Library/0.7.0/MSVC/14.1/x64/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Program Files/Robotics Library/0.7.0/MSVC/14.1/x64/include/bullet"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "dynamics_generate_messages_lisp::@861fc74b1f58279cdb1a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "dynamics_generate_messages_cpp::@861fc74b1f58279cdb1a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "dynamics_generate_messages_eus::@861fc74b1f58279cdb1a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "dynamics_generate_messages_nodejs::@861fc74b1f58279cdb1a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "dynamics_generate_messages_py::@861fc74b1f58279cdb1a"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "real_robot_node::@861fc74b1f58279cdb1a",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\rlkins.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\rlmdls.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\rlhals.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\rlsgs.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\rlplans.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\roscpp.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\boost_filesystem-vc140-mt.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\rosconsole.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\rosconsole_log4cxx.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\rosconsole_backend_interface.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\log4cxx.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\boost_regex-vc140-mt.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\roscpp_serialization.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\xmlrpcpp.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\rostime.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\cpp_common.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\boost_system-vc140-mt.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\boost_thread-vc140-mt.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\boost_chrono-vc140-mt.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\boost_date_time-vc140-mt.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\Lib\\boost_atomic-vc140-mt.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\opt\\ros\\noetic\\x64\\lib\\console_bridge.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "ws2_32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\rlkins.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\rlmdls.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\nlopt.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\rlsgs.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\libxml2.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\libxslt.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\libiconv.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\zlib.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\BulletCollision.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\BulletDynamics.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\BulletSoftBody.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\LinearMath.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\Coin4.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\ode_double.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\PQP.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "\"C:\\Program Files\\Robotics Library\\0.7.0\\MSVC\\14.1\\x64\\lib\\solid3.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "real_robot_node",
+	"nameOnDisk" : "real_robot_node.exe",
+	"paths" : 
+	{
+		"build" : "dynamics",
+		"source" : "dynamics"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "dynamics/src/real_robot_node.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

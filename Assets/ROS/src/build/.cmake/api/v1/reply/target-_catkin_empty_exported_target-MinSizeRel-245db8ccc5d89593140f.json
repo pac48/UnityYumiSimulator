@@ -1,0 +1,53 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"find_package"
+		],
+		"files" : 
+		[
+			"C:/opt/ros/noetic/x64/share/catkin/cmake/catkinConfig.cmake",
+			"xacro/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 115,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "_catkin_empty_exported_target::@3cbd8a927962083a7baa",
+	"name" : "_catkin_empty_exported_target",
+	"paths" : 
+	{
+		"build" : "xacro",
+		"source" : "xacro"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

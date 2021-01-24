@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{82F294C6-4254-30B5-92E4-2414D16CB486}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeSystem.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\catkin\catkin_generated\version\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\catkin_generated\installspace\_setup_util.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\catkin_generated\order_packages.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\DartConfiguration.tcl.in;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindGTest.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindPythonInterp.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindThreads.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\GoogleTest.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\all.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\assert.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\atomic_configure_file.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_add_env_hooks.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_destinations.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_download.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_generate_environment.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_install_python.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_libraries.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_metapackage.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_package.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_package_xml.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_python_setup.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_symlink_install.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_workspace.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\custom_install.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\debug_message.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\order_packages.cmake.em;C:\opt\ros\noetic\x64\share\catkin\cmake\em_expand.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\empy.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\find_program_required.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\interrogate_setup_dot_py.py;C:\opt\ros\noetic\x64\share\catkin\cmake\legacy.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\list_append_deduplicate.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\list_append_unique.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\list_insert_in_workspace_order.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\platform\lsb.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\platform\ubuntu.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\platform\windows.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\python.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\safe_execute_process.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\stamp.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\string_starts_with.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\_setup_util.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\env.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\generate_cached_setup.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\local_setup.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\order_packages.context.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\python_win32_wrapper.cpp.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\rosinstall.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\setup.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\test\catkin_download_test_data.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\test\gtest.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\test\nosetests.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\test\tests.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\tools\doxygen.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\tools\libraries.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\tools\rt.cmake;C:\opt\ros\noetic\x64\share\catkin\package.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeSystem.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\catkin\catkin_generated\version\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\catkin_generated\installspace\_setup_util.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\catkin_generated\order_packages.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\DartConfiguration.tcl.in;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindGTest.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindPythonInterp.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindThreads.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\GoogleTest.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\all.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\assert.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\atomic_configure_file.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_add_env_hooks.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_destinations.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_download.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_generate_environment.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_install_python.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_libraries.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_metapackage.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_package.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_package_xml.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_python_setup.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_symlink_install.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_workspace.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\custom_install.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\debug_message.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\order_packages.cmake.em;C:\opt\ros\noetic\x64\share\catkin\cmake\em_expand.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\empy.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\find_program_required.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\interrogate_setup_dot_py.py;C:\opt\ros\noetic\x64\share\catkin\cmake\legacy.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\list_append_deduplicate.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\list_append_unique.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\list_insert_in_workspace_order.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\platform\lsb.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\platform\ubuntu.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\platform\windows.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\python.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\safe_execute_process.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\stamp.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\string_starts_with.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\_setup_util.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\env.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\generate_cached_setup.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\local_setup.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\order_packages.context.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\python_win32_wrapper.cpp.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\rosinstall.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\setup.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\test\catkin_download_test_data.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\test\gtest.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\test\nosetests.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\test\tests.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\tools\doxygen.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\tools\libraries.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\tools\rt.cmake;C:\opt\ros\noetic\x64\share\catkin\package.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeSystem.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\catkin\catkin_generated\version\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\catkin_generated\installspace\_setup_util.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\catkin_generated\order_packages.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\DartConfiguration.tcl.in;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindGTest.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindPythonInterp.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindThreads.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\GoogleTest.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\all.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\assert.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\atomic_configure_file.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_add_env_hooks.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_destinations.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_download.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_generate_environment.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_install_python.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_libraries.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_metapackage.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_package.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_package_xml.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_python_setup.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_symlink_install.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_workspace.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\custom_install.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\debug_message.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\order_packages.cmake.em;C:\opt\ros\noetic\x64\share\catkin\cmake\em_expand.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\empy.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\find_program_required.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\interrogate_setup_dot_py.py;C:\opt\ros\noetic\x64\share\catkin\cmake\legacy.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\list_append_deduplicate.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\list_append_unique.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\list_insert_in_workspace_order.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\platform\lsb.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\platform\ubuntu.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\platform\windows.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\python.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\safe_execute_process.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\stamp.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\string_starts_with.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\_setup_util.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\env.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\generate_cached_setup.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\local_setup.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\order_packages.context.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\python_win32_wrapper.cpp.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\rosinstall.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\setup.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\test\catkin_download_test_data.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\test\gtest.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\test\nosetests.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\test\tests.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\tools\doxygen.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\tools\libraries.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\tools\rt.cmake;C:\opt\ros\noetic\x64\share\catkin\package.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/paulg/UnityProjects/project/Assets/ROS/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3.18.2\CMakeSystem.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\catkin\catkin_generated\version\package.cmake;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\catkin_generated\installspace\_setup_util.py;C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\catkin_generated\order_packages.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\DartConfiguration.tcl.in;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindGTest.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindPythonInterp.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\FindThreads.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\GoogleTest.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\all.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\assert.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\atomic_configure_file.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig-version.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkinConfig.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_add_env_hooks.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_destinations.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_download.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_generate_environment.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_install_python.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_libraries.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_metapackage.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_package.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_package_xml.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_python_setup.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_symlink_install.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\catkin_workspace.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\custom_install.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\debug_message.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\em\order_packages.cmake.em;C:\opt\ros\noetic\x64\share\catkin\cmake\em_expand.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\empy.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\find_program_required.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\interrogate_setup_dot_py.py;C:\opt\ros\noetic\x64\share\catkin\cmake\legacy.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\list_append_deduplicate.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\list_append_unique.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\list_insert_in_workspace_order.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\platform\lsb.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\platform\ubuntu.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\platform\windows.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\python.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\safe_execute_process.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\stamp.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\string_starts_with.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\_setup_util.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\env.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\generate_cached_setup.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\local_setup.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\order_packages.context.py.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\python_win32_wrapper.cpp.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\rosinstall.in;C:\opt\ros\noetic\x64\share\catkin\cmake\templates\setup.bat.in;C:\opt\ros\noetic\x64\share\catkin\cmake\test\catkin_download_test_data.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\test\gtest.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\test\nosetests.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\test\tests.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\tools\doxygen.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\tools\libraries.cmake;C:\opt\ros\noetic\x64\share\catkin\cmake\tools\rt.cmake;C:\opt\ros\noetic\x64\share\catkin\package.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\ZERO_CHECK.vcxproj">
+      <Project>{F76576D4-8480-3F05-BCE1-6EA666B8813E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\Project__setup_util.py_exec_install_python.vcxproj">
+      <Project>{A49B2BA6-6F92-3F93-8949-BA389F069FFB}</Project>
+      <Name>Project__setup_util.py_exec_install_python</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\state_server\client_node.vcxproj">
+      <Project>{262391FD-09A2-35F4-8B49-94FC2AA406D2}</Project>
+      <Name>client_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\dynamics_generate_messages.vcxproj">
+      <Project>{BB258801-D861-37A8-9C59-B3829B712879}</Project>
+      <Name>dynamics_generate_messages</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\real_robot_node.vcxproj">
+      <Project>{BE833B42-AF07-399F-BF67-AD20B212636C}</Project>
+      <Name>real_robot_node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\xacro_xacro.py_exec_cip_devel_python.vcxproj">
+      <Project>{F1498258-1DD5-3BF1-9778-6FF9C188A3AA}</Project>
+      <Name>xacro_xacro.py_exec_cip_devel_python</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\xacro_xacro.py_exec_devel.vcxproj">
+      <Project>{2A4B45D1-1C2C-35C3-8326-8C113687A1E3}</Project>
+      <Name>xacro_xacro.py_exec_devel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\xacro_xacro.py_exec_install.vcxproj">
+      <Project>{C3B8F259-1411-3917-B88B-D147D3276024}</Project>
+      <Name>xacro_xacro.py_exec_install</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\xacro\xacro_xacro.py_exec_install_python.vcxproj">
+      <Project>{655418A4-84B7-3815-A66F-D4311B3FA947}</Project>
+      <Name>xacro_xacro.py_exec_install_python</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

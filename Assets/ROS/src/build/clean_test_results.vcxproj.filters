@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\ee0f51077d99b2dfd81982e45c2ee5a5\clean_test_results.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\clean_test_results" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{38B65DE4-B16C-399C-ACD4-D249A0803FEE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

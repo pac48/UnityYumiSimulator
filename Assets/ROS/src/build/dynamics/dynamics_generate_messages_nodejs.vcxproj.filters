@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\854220e624af3b8ff02114d924cdd503\getStaticTorques.js.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\854220e624af3b8ff02114d924cdd503\setTorques.js.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\CMakeFiles\3d0d509a51b99fe72096fe068cd3e21e\dynamics_generate_messages_nodejs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\dynamics\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\paulg\UnityProjects\project\Assets\ROS\src\build\dynamics\CMakeFiles\dynamics_generate_messages_nodejs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{38B65DE4-B16C-399C-ACD4-D249A0803FEE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

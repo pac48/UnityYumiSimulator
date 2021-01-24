@@ -1,0 +1,3 @@
+"D:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\client_node.dir/objects.a
+C:\mingw64\bin\ar.exe cr CMakeFiles\client_node.dir/objects.a @CMakeFiles\client_node.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -O2 -g -DNDEBUG   -Wl,--whole-archive CMakeFiles\client_node.dir/objects.a -Wl,--no-whole-archive  -o ..\devel\lib\state_server\client_node.exe -Wl,--out-implib,..\devel\lib\libclient_node.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\client_node.dir\linklibs.rsp

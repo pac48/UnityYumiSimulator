@@ -1,0 +1,48 @@
+^C:\USERS\PAULG\UNITYPROJECTS\PROJECT\ASSETS\ROS\SRC\BUILD\CMAKEFILES\321ADF47F64F1D8D3E0660943BCE9129\GETSTATICTORQUES.L.RULE
+setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/geneus/cmake/../../../lib/geneus/gen_eus.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/srv/getStaticTorques.srv -Istd_msgs:C:/opt/ros/noetic/x64/share/std_msgs/cmake/../msg -p dynamics -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/share/roseus/ros/dynamics/srv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PAULG\UNITYPROJECTS\PROJECT\ASSETS\ROS\SRC\BUILD\CMAKEFILES\321ADF47F64F1D8D3E0660943BCE9129\SETTORQUES.L.RULE
+setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/geneus/cmake/../../../lib/geneus/gen_eus.py C:/Users/paulg/UnityProjects/project/Assets/ROS/src/dynamics/srv/setTorques.srv -Istd_msgs:C:/opt/ros/noetic/x64/share/std_msgs/cmake/../msg -p dynamics -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/share/roseus/ros/dynamics/srv
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PAULG\UNITYPROJECTS\PROJECT\ASSETS\ROS\SRC\BUILD\CMAKEFILES\ACDA2E9913C4C8868D1AC5B1FDAED0FD\MANIFEST.L.RULE
+setlocal
+call ..\catkin_generated\env_cached.bat C:/opt/ros/noetic/x64/python.exe C:/opt/ros/noetic/x64/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/devel/share/roseus/ros/dynamics dynamics std_msgs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PAULG\UNITYPROJECTS\PROJECT\ASSETS\ROS\SRC\BUILD\CMAKEFILES\3D0D509A51B99FE72096FE068CD3E21E\DYNAMICS_GENERATE_MESSAGES_EUS.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PAULG\UNITYPROJECTS\PROJECT\ASSETS\ROS\SRC\DYNAMICS\CMAKELISTS.TXT
+setlocal
+C:\opt\ros\noetic\x64\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/paulg/UnityProjects/project/Assets/ROS/src -BC:/Users/paulg/UnityProjects/project/Assets/ROS/src/build --check-stamp-file C:/Users/paulg/UnityProjects/project/Assets/ROS/src/build/dynamics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
