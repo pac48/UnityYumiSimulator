@@ -292,79 +292,79 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="System.Buffers">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Buffers.dll</HintPath>
- </Reference>
- <Reference Include="GitHub.Logging">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
- </Reference>
- <Reference Include="Mono.CecilX.Rocks">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
- </Reference>
- <Reference Include="websocket-sharp">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/External/websocket-sharp.dll</HintPath>
- </Reference>
- <Reference Include="Mono.CecilX.Pdb">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
- </Reference>
- <Reference Include="RosBridgeClient">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/RosBridgeClient.dll</HintPath>
- </Reference>
- <Reference Include="System.Memory">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Memory.dll</HintPath>
- </Reference>
- <Reference Include="MessageGeneration">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/MessageGeneration.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Buffers.dll</HintPath>
  </Reference>
  <Reference Include="System.Threading.Tasks.Extensions">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Threading.Tasks.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.Bcl.AsyncInterfaces">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Threading.Tasks.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="MathNet.Numerics">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/MathNet.Numerics.dll</HintPath>
- </Reference>
- <Reference Include="Mono.CecilX">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
- </Reference>
- <Reference Include="Urdf">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Urdf.dll</HintPath>
- </Reference>
- <Reference Include="sfw.net">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/Plugins/GitHub/Editor/sfw.net.dll</HintPath>
- </Reference>
- <Reference Include="System.Threading.Channels">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Threading.Channels.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/MathNet.Numerics.dll</HintPath>
  </Reference>
  <Reference Include="GitHub.Unity.45">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll</HintPath>
- </Reference>
- <Reference Include="System.Text.Json">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Text.Json.dll</HintPath>
- </Reference>
- <Reference Include="GitHub.UnityShim">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll</HintPath>
- </Reference>
- <Reference Include="GitHub.Api.45">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll</HintPath>
- </Reference>
- <Reference Include="Newtonsoft.Json.Bson">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/External/Newtonsoft.Json.Bson.dll</HintPath>
- </Reference>
- <Reference Include="System.Text.Encodings.Web">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Text.Encodings.Web.dll</HintPath>
- </Reference>
- <Reference Include="Mono.CecilX.Mdb">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.CecilX.Rocks">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+ </Reference>
+ <Reference Include="RosBridgeClient">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/RosBridgeClient.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json.Bson">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/External/Newtonsoft.Json.Bson.dll</HintPath>
+ </Reference>
+ <Reference Include="GitHub.Api.45">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.CecilX.Mdb">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+ </Reference>
+ <Reference Include="GitHub.Logging">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.CecilX.Pdb">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
+ </Reference>
+ <Reference Include="MessageGeneration">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/MessageGeneration.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Json">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Text.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encodings.Web">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Text.Encodings.Web.dll</HintPath>
  </Reference>
  <Reference Include="System.Runtime.CompilerServices.Unsafe">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+ </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/External/websocket-sharp.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Memory">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Memory.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.CecilX">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
+ </Reference>
+ <Reference Include="Urdf">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Urdf.dll</HintPath>
+ </Reference>
+ <Reference Include="sfw.net">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/Plugins/GitHub/Editor/sfw.net.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Channels">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Threading.Channels.dll</HintPath>
+ </Reference>
+ <Reference Include="GitHub.UnityShim">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/External/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/External/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -712,10 +712,10 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

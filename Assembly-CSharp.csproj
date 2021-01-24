@@ -55,7 +55,7 @@
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\SensorDataVisualization\LaserScanVisualizerSpheres.cs" />
      <Compile Include="Assets\RosSharp\Scripts\Extensions\TransformExtensions.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\YumiJointPublisher.cs" />
-     <Compile Include="Assets\HumanController.cs" />
+     <Compile Include="Assets\Male.cs" />
      <Compile Include="Assets\BehaviourScript.cs" />
      <Compile Include="Assets\RosSharp\Scripts\Extensions\HeaderExtensions.cs" />
      <Compile Include="Assets\Yumi.cs" />
@@ -109,6 +109,7 @@
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\PoseStampedPublisherStatic.cs" />
      <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfPlugin.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\LaserScanWriter.cs" />
+     <Compile Include="Assets\Spawner.cs" />
      <Compile Include="Assets\Player.cs" />
      <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfCollisions.cs" />
      <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfJoints\UrdfJoint.cs" />
@@ -127,15 +128,100 @@
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\UnityFibonacciActionClient.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\RosCommuncation\GetParamServiceProvider.cs" />
      <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\LaserScanReader.cs" />
-     <None Include="Assets\ROS\unity_simulation_scene\package.xml" />
+     <None Include="Assets\ROS\src\cmake-build-debug\gtest\CMakeFiles\gmock_main.dir\link.txt" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\xacro\CMakeFiles\xacro_xacro.py_exec_install.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-debug\simulator\CMakeFiles\yumi_simulator_dynamics_node.dir\link.txt" />
+     <None Include="Assets\ROS\src\matlab_gen\build\gradle_cache\caches\1.8\scripts\build_3m426egted93ttua7uj0fqlo\ProjectScript\buildscript\classes\emptyScript.txt" />
+     <None Include="Assets\ROS\src\matlab_gen\build\gradle_cache\caches\1.8\scripts\build_5a7lvav3qc8qaok6shgs2dr5dr\ProjectScript\buildscript\classes\emptyScript.txt" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\CMakeFiles\Progress\count.txt" />
+     <None Include="Assets\ROS\src\cmake-build-debug\state_server\CMakeFiles\client_node.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\unity_simulation_scene\package.xml" />
+     <None Include="Assets\ROS\src\cmake-build-debug\xacro\CMakeFiles\xacro_xacro.py_exec_install_python.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\yumi_description\package.xml" />
+     <None Include="Assets\ROS\src\cmake-build-debug\velocity_control\CMakeFiles\abb_libegm_samples_joint_velocity_controller_node.dir\link.txt" />
+     <None Include="Assets\ROS\src\cmake-build-debug\CMakeFiles\CMakeRuleHashes.txt" />
+     <None Include="Assets\ROS\src\cmake-build-release\CMakeFiles\clion-environment.txt" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\xacro\CMakeFiles\xacro_xacro.py_exec_devel.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\xacro\test\include1.xml" />
+     <None Include="Assets\ROS\src\cmake-build-release\xacro\CMakeFiles\xacro_xacro.py_exec_install_python.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\CMakeFiles\TargetDirectories.txt" />
+     <None Include="Assets\ROS\src\cmake-build-debug\simulator\CMakeFiles\simulator_dynamics_node.dir\link.txt" />
+     <None Include="Assets\ROS\build\CMakeCache.txt" />
+     <None Include="Assets\ROS\src\matlab_gen\build\gradle_cache\caches\1.8\scripts\build_29lfq02uebd0diojruat2cvd5j\ProjectScript\buildscript\classes\emptyScript.txt" />
+     <None Include="Assets\ROS\build\CMakeFiles\TargetDirectories.txt" />
+     <None Include="Assets\ROS\src\cmake-build-debug\abb_libegm_samples\CMakeFiles\abb_libegm_samples_joint_velocity_controller_node.dir\link.txt" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\xacro\CMakeFiles\xacro_xacro.py_exec_cip_devel_python.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-release\CMakeFiles\TargetDirectories.txt" />
+     <None Include="Assets\ROS\src\cmake-build-debug\velocity_control\CMakeFiles\velocity_control_joint_velocity_controller_node.dir\link.txt" />
+     <None Include="Assets\ROS\src\matlab_gen\build\rosjava_build\package.xml" />
+     <None Include="Assets\ROS\src\xacro\test\test-xacro-cmake\CMakeLists.txt" />
+     <None Include="Assets\ROS\src\cmake-build-release\xacro\CMakeFiles\xacro_xacro.py_exec_cip_devel_python.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\CMakeFiles\clion-environment.txt" />
+     <None Include="Assets\ROS\src\state_server\package.xml" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\CMakeCache.txt" />
+     <None Include="Assets\ROS\src\cmake-build-release\CMakeFiles\clion-log.txt" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\dynamics\CMakeFiles\sim_robot_node.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-debug\dynamics\CMakeFiles\sim_robot_node.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\CMakeFiles\Project__setup_util.py_exec_install_python.dir\objects1.rsp" />
      <None Include="Assets\Mirror\Version.txt" />
+     <None Include="Assets\ROS\src\cmake-build-release\CMakeFiles\CMakeRuleHashes.txt" />
+     <None Include="Assets\ROS\src\cmake-build-debug\CMakeFiles\clion-environment.txt" />
+     <None Include="Assets\ROS\src\cmake-build-release\CMakeFiles\Project__setup_util.py_exec_install_python.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-debug\CMakeFiles\TargetDirectories.txt" />
      <None Include="Assets\Mirror\Readme.txt" />
+     <None Include="Assets\ROS\src\state_server\CMakeLists.txt" />
+     <None Include="Assets\ROS\src\cmake-build-debug\abb_libegm\CMakeFiles\abb_libegm.dir\link.txt" />
+     <None Include="Assets\ROS\src\cmake-build-release\state_server\CMakeFiles\client_node.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\dynamics\CMakeFiles\real_robot_node.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-release\dynamics\CMakeFiles\sim_robot_node.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\CMakeLists.txt" />
+     <None Include="Assets\ROS\src\cmake-build-debug\CMakeCache.txt" />
+     <None Include="Assets\ROS\src\xacro\test\include2.xml" />
+     <None Include="Assets\ROS\src\cmake-build-debug\xacro\CMakeFiles\xacro_xacro.py_exec_devel.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-release\dynamics\CMakeFiles\real_robot_node.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\matlab_gen\build\rosjava_build\build.gradle.template" />
+     <None Include="Assets\ROS\src\xacro\test\test-xacro-cmake\package.xml" />
+     <None Include="Assets\ROS\src\yumi_launch\package.xml" />
+     <None Include="Assets\ROS\src\cmake-build-debug\CMakeFiles\Project__setup_util.py_exec_install_python.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\xacro\package.xml" />
+     <None Include="Assets\ROS\src\xacro\test\subdir\include1.xml" />
+     <None Include="Assets\ROS\src\cmake-build-release\CMakeCache.txt" />
      <None Include="Assets\Mirror\Notice.txt" />
+     <None Include="Assets\ROS\src\cmake-build-debug\dynamics\CMakeFiles\real_robot_node.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-debug\state_server\CMakeFiles\client_node.dir\link.txt" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\state_server\CMakeFiles\client_node.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-debug\simulator\CMakeFiles\dynamics_node.dir\link.txt" />
+     <None Include="Assets\ROS\src\xacro\test\CMakeLists.txt" />
+     <None Include="Assets\ROS\src\cmake-build-release\CMakeFiles\Progress\count.txt" />
+     <None Include="Assets\ROS\src\cmake-build-debug\gtest\CMakeFiles\gmock.dir\link.txt" />
+     <None Include="Assets\ROS\src\xacro\test\robots\pr2\pr2_1.11.4.xml" />
+     <None Include="Assets\ROS\src\cmake-build-debug\CMakeFiles\Progress\count.txt" />
      <None Include="Assets\Mirror\Plugins\Mono.Cecil\License.txt" />
+     <None Include="Assets\ROS\src\dynamics\CMakeLists.txt" />
      <None Include="Assets\RosSharp\Plugins\External\websocket-sharp.xml" />
-     <None Include="Assets\ROS\unity_simulation_scene\CMakeLists.txt" />
+     <None Include="Assets\ROS\src\dynamics\package.xml" />
+     <None Include="Assets\ROS\src\cmake-build-debug\CMakeFiles\clion-log.txt" />
+     <None Include="Assets\ROS\src\cmake-build-debug\xacro\CMakeFiles\xacro_xacro.py_exec_cip_devel_python.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-debug\gtest\gtest\CMakeFiles\gtest.dir\link.txt" />
+     <None Include="Assets\ROS\src\matlab_gen\build\gradle_cache\caches\1.8\scripts\build_74echg9rvadg7aftkh08tv946h\ProjectScript\buildscript\classes\emptyScript.txt" />
+     <None Include="Assets\ROS\src\cmake-build-release\xacro\CMakeFiles\xacro_xacro.py_exec_devel.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\xacro\CMakeFiles\xacro_xacro.py_exec_install_python.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-debug\simulator\CMakeFiles\yumi_simulator_viewer_node.dir\link.txt" />
+     <None Include="Assets\ROS\src\matlab_gen\build\gradle_cache\caches\1.8\scripts\settings_4nle9f0o3s0g1avn3i5kebj6et\SettingsScript\buildscript\classes\emptyScript.txt" />
      <None Include="Assets\RosSharp\Plugins\External\Newtonsoft.Json.xml" />
+     <None Include="Assets\ROS\src\yumi_launch\CMakeLists.txt" />
+     <None Include="Assets\ROS\src\yumi_description\CMakeLists.txt" />
+     <None Include="Assets\ROS\src\xacro\CMakeLists.txt" />
+     <None Include="Assets\ROS\src\cmake-build-debug\tcp\CMakeFiles\client_node.dir\link.txt" />
+     <None Include="Assets\ROS\src\cmake-build-debug\gtest\gtest\CMakeFiles\gtest_main.dir\link.txt" />
+     <None Include="Assets\ROS\src\cmake-build-release\xacro\CMakeFiles\xacro_xacro.py_exec_install.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-debug\xacro\CMakeFiles\xacro_xacro.py_exec_install.dir\objects1.rsp" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\CMakeFiles\CMakeRuleHashes.txt" />
+     <None Include="Assets\ROS\src\matlab_gen\build\gradle_cache\caches\1.8\scripts\build_7beftdfhdv1k0j09sq6prhkmj8\ProjectScript\buildscript\classes\emptyScript.txt" />
+     <None Include="Assets\ROS\src\cmake-build-relwithdebinfo\CMakeFiles\clion-log.txt" />
      <None Include="Assets\RosSharp\Plugins\External\Newtonsoft.Json.Bson.xml" />
+     <None Include="Assets\ROS\src\matlab_gen\build\gradle_cache\caches\1.8\scripts\build_56878obs8fv5ieudlimjnh2aql\ProjectScript\buildscript\classes\emptyScript.txt" />
+     <None Include="Assets\ROS\src\unity_simulation_scene\CMakeLists.txt" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -359,64 +445,64 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
  <Reference Include="System.Buffers">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Buffers.dll</HintPath>
- </Reference>
- <Reference Include="Mono.CecilX.Rocks">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
- </Reference>
- <Reference Include="websocket-sharp">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/External/websocket-sharp.dll</HintPath>
- </Reference>
- <Reference Include="Mono.CecilX.Pdb">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
- </Reference>
- <Reference Include="RosBridgeClient">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/RosBridgeClient.dll</HintPath>
- </Reference>
- <Reference Include="System.Memory">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Memory.dll</HintPath>
- </Reference>
- <Reference Include="MessageGeneration">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/MessageGeneration.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Buffers.dll</HintPath>
  </Reference>
  <Reference Include="System.Threading.Tasks.Extensions">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Threading.Tasks.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.Bcl.AsyncInterfaces">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Threading.Tasks.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="MathNet.Numerics">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/MathNet.Numerics.dll</HintPath>
- </Reference>
- <Reference Include="Mono.CecilX">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
- </Reference>
- <Reference Include="Urdf">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Urdf.dll</HintPath>
- </Reference>
- <Reference Include="System.Threading.Channels">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Threading.Channels.dll</HintPath>
- </Reference>
- <Reference Include="System.Text.Json">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Text.Json.dll</HintPath>
- </Reference>
- <Reference Include="Newtonsoft.Json.Bson">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/External/Newtonsoft.Json.Bson.dll</HintPath>
- </Reference>
- <Reference Include="System.Text.Encodings.Web">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Text.Encodings.Web.dll</HintPath>
- </Reference>
- <Reference Include="Mono.CecilX.Mdb">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/MathNet.Numerics.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.CecilX.Rocks">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+ </Reference>
+ <Reference Include="RosBridgeClient">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/RosBridgeClient.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json.Bson">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/External/Newtonsoft.Json.Bson.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.CecilX.Mdb">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.CecilX.Pdb">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
+ </Reference>
+ <Reference Include="MessageGeneration">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/MessageGeneration.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Json">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Text.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encodings.Web">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Text.Encodings.Web.dll</HintPath>
  </Reference>
  <Reference Include="System.Runtime.CompilerServices.Unsafe">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/Microsoft/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+ </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/External/websocket-sharp.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Memory">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Memory.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.CecilX">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
+ </Reference>
+ <Reference Include="Urdf">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Urdf.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Channels">
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/Microsoft/System.Threading.Channels.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/paulg/Unity Projects/project/Assets/RosSharp/Plugins/External/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Assets/RosSharp/Plugins/External/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -764,43 +850,43 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="ParrelSync">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/ParrelSync.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/ParrelSync.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Runtime">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.quicksearch">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/com.unity.quicksearch.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/com.unity.quicksearch.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/paulg/Unity Projects/project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/paulg/UnityProjects/project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

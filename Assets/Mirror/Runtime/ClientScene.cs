@@ -148,7 +148,10 @@ namespace Mirror
 
             if (logger.LogEnabled()) logger.Log("ClientScene.AddPlayer() called with connection [" + readyConnection + "]");
 
-            readyConnection.Send(new AddPlayerMessage());
+            var msg = new AddPlayerMessage();
+            if (Application.platform == RuntimePlatform.WebGLPlayer)
+                msg.webGL = true;
+            readyConnection.Send(msg);
             return true;
         }
 

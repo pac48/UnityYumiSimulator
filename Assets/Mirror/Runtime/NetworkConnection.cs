@@ -18,8 +18,7 @@ namespace Mirror
     {
         public const int LocalConnectionId = 0;
         static readonly ILogger logger = LogFactory.GetLogger<NetworkConnection>();
-
-        public bool webGL = false;
+        
         // internal so it can be tested
         internal readonly HashSet<NetworkIdentity> visList = new HashSet<NetworkIdentity>();
 

@@ -20,6 +20,7 @@ using UnityEngine.Rendering;
             {
                 print("automatic connect");
                 networkAddress = "18.188.185.82";
+                //networkAddress = "localhost";
                 StartClient();
             }
         }
@@ -28,13 +29,13 @@ using UnityEngine.Rendering;
             return SystemInfo.graphicsDeviceType == GraphicsDeviceType.Null;
         }
 
-        public override void OnServerAddPlayer(NetworkConnection conn)
+        public override void OnServerAddPlayer(NetworkConnection conn, AddPlayerMessage msg)
         {
             // add player at correct spawn position
            // Transform start = numPlayers == 0 ? leftRacketSpawn : rightRacketSpawn;
            // GameObject player = Instantiate(playerPrefab, start.position, start.rotation);
           GameObject player;
-          if (numPlayers == 0 && Application.platform != RuntimePlatform.WebGLPlayer ){
+          if (!msg.webGL && GameObject.Find("yumiNetwork(Clone)") == null){
               player = Instantiate(spawnPrefabs.Find(prefab => prefab.name == "yumiNetwork"));
           } else{
               player = Instantiate(spawnPrefabs.Find(prefab => prefab.name == "male"));

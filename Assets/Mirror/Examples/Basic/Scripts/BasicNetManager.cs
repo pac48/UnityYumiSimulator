@@ -27,9 +27,9 @@ namespace Mirror.Examples.Basic
         /// <para>The default implementation for this function creates a new player object from the playerPrefab.</para>
         /// </summary>
         /// <param name="conn">Connection from client.</param>
-        public override void OnServerAddPlayer(NetworkConnection conn)
+        public override void OnServerAddPlayer(NetworkConnection conn, AddPlayerMessage msg)
         {
-            base.OnServerAddPlayer(conn);
+            base.OnServerAddPlayer(conn, msg);
             ResetPlayerNumbers();
         }
 

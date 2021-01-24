@@ -28,7 +28,9 @@ namespace Mirror
 
     public struct NotReadyMessage : NetworkMessage { }
 
-    public struct AddPlayerMessage : NetworkMessage { }
+    public struct AddPlayerMessage : NetworkMessage { 
+        public bool webGL;
+    }
 
     public struct DisconnectMessage : NetworkMessage { }
 

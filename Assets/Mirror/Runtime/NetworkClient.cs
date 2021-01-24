@@ -74,6 +74,8 @@ namespace Mirror
 
             // setup all the handlers
             connection = new NetworkConnectionToServer();
+            //if (Application.platform == RuntimePlatform.WebGLPlayer || true)
+           //     connection.webGL = true;
             connection.SetHandlers(handlers);
         }
 

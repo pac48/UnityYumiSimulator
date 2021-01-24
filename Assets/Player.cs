@@ -2,5 +2,6 @@
 {
     Server,
     Yumi,
-    Male
+    Male,
+    None
 }

@@ -4,7 +4,7 @@ namespace Mirror.Cloud.Example
 {
     public sealed class NetworkManagerListServerPong : NetworkManagerListServer
     {
-        public override void OnServerAddPlayer(NetworkConnection conn)
+        public override void OnServerAddPlayer(NetworkConnection conn, AddPlayerMessage msg)
         {
             Debug.Assert(startPositions.Count == 2, "Pong Scene should have 2 start Poitions");
             // add player at correct spawn position

@@ -1217,7 +1217,7 @@ namespace Mirror
                 return;
             }
 
-            OnServerAddPlayer(conn);
+            OnServerAddPlayer(conn, msg);
         }
 
         void OnServerErrorInternal(NetworkConnection conn, ErrorMessage msg)
@@ -1342,7 +1342,7 @@ namespace Mirror
         /// <para>The default implementation for this function creates a new player object from the playerPrefab.</para>
         /// </summary>
         /// <param name="conn">Connection from client.</param>
-        public virtual void OnServerAddPlayer(NetworkConnection conn)
+        public virtual void OnServerAddPlayer(NetworkConnection conn, AddPlayerMessage msg)
         {
             Transform startPos = GetStartPosition();
             GameObject player = startPos != null

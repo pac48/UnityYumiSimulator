@@ -31,14 +31,14 @@ namespace Mirror.Examples.MultipleAdditiveScenes
         /// <para>The default implementation for this function creates a new player object from the playerPrefab.</para>
         /// </summary>
         /// <param name="conn">Connection from client.</param>
-        public override void OnServerAddPlayer(NetworkConnection conn)
+        public override void OnServerAddPlayer(NetworkConnection conn, AddPlayerMessage msg)
         {
-            StartCoroutine(OnServerAddPlayerDelayed(conn));
+            StartCoroutine(OnServerAddPlayerDelayed(conn, msg));
         }
 
         // This delay is mostly for the host player that loads too fast for the
         // server to have subscenes async loaded from OnStartServer ahead of it.
-        IEnumerator OnServerAddPlayerDelayed(NetworkConnection conn)
+        IEnumerator OnServerAddPlayerDelayed(NetworkConnection conn, AddPlayerMessage msg)
         {
             // wait for server to async load all subscenes for game instances
             while (!subscenesLoaded)
@@ -46,7 +46,7 @@ namespace Mirror.Examples.MultipleAdditiveScenes
 
             conn.Send(new SceneMessage { sceneName = gameScene, sceneOperation = SceneOperation.LoadAdditive });
 
-            base.OnServerAddPlayer(conn);
+            base.OnServerAddPlayer(conn, msg);
 
             PlayerScore playerScore = conn.identity.GetComponent<PlayerScore>();
             playerScore.playerNumber = clientIndex;
